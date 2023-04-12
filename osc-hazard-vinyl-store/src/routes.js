@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 const Home = () => <h2>Home</h2>;
 const News = () => <h2>News</h2>;
@@ -9,15 +9,13 @@ const EquipmentAndMore = () => <h2>Equipment & More</h2>;
 
 export const AppRoutes = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/warehouse-finds" element={<WarehouseFinds />} />
-        <Route path="/genres" element={<Genres />} />
-        <Route path="/releases" element={<Releases />} />
-        <Route path="/equipment" element={<EquipmentAndMore />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/warehouse-finds" element={<WarehouseFinds />} />
+      <Route path="/genres" element={<Genres />} />
+      <Route path="/releases" element={<Releases />} />
+      <Route path="/equipment" element={<EquipmentAndMore />} />
+    </Routes>
   );
 };

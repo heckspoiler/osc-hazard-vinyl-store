@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <Header />
       <AppRoutes />
-      <h1>Hurensohn</h1>
     </div>
   );
 }
