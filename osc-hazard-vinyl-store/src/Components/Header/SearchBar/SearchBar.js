@@ -13,11 +13,12 @@ export const SearchBar = () => {
   };
 
   return (
-    <form onSubmit={handleSearchSubmit} className="searchbar-container">
-      <button
-        type="submit"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
+    <form
+      onSubmit={handleSearchSubmit}
+      className="searchbar-container absolute right-96 w-auto
+      h-14 flex items-center justify-center gap-2 mt-[-4rem]"
+    >
+      <button type="submit" className="h-7 w-7">
         <img src={searchIcon} alt="Search Icon" />
       </button>
       <input
@@ -25,7 +26,7 @@ export const SearchBar = () => {
         placeholder="Search..."
         value={search}
         onChange={handleSearch}
-        className="ml-2 border border-gray-400 rounded py-2 px-4"
+        className="pl-5 bg-gray-100 border-black border color-black font-mono h-8 text-xs focus:border-FFEE57"
       />
     </form>
   );

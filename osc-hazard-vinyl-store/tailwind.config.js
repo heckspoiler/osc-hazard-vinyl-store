@@ -1,15 +1,15 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./src/Components/Header/NavBar/NavBar.js",
+    "./public/index.html",
+    "./src/Components/Header/Header.js",
+    "./src/Components/Header/SearchBar/SearchBar.js",
+  ],
   theme: {
     extend: {
-      backgroundColor: {
-        header: "red",
-      },
-      height: {
-        header: "20rem",
-      },
-      width: {
-        full: "100%",
+      colors: {
+        buttonYellow: "#FFEE57",
       },
     },
   },
