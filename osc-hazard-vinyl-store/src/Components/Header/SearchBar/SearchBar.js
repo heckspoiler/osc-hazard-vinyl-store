@@ -18,7 +18,7 @@ export const SearchBar = () => {
       className="searchbar-container absolute right-96 w-auto
       h-14 flex items-center justify-center gap-2 mt-[-4rem]"
     >
-      <button type="submit" className="h-7 w-7">
+      <button type="submit" className="h-5 w-5">
         <img src={searchIcon} alt="Search Icon" />
       </button>
       <input
@@ -26,7 +26,7 @@ export const SearchBar = () => {
         placeholder="Search..."
         value={search}
         onChange={handleSearch}
-        className="pl-5 bg-gray-100 border-black border color-black font-mono h-8 text-xs focus:border-FFEE57"
+        className="pl-5 bg-white border-black border color-black font-mono h-6 w-48 focus:border-FFEE57 text-xs"
       />
     </form>
   );
