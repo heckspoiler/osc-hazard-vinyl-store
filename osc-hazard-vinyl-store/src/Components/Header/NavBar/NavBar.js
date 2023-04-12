@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const NavBar = (props) => {
   return (
-    <ul>
+    <ul className="bg-red-500 w-full h-20">
       <li>
         <Link to="/">Home</Link>
       </li>
