@@ -83,6 +83,7 @@ export const SearchBar = () => {
       fontFamily: "Monospace",
       minHeight: "2rem",
       background: "white",
+      overflow: "hidden",
     },
     suggestion: {
       position: "relative",
@@ -91,7 +92,6 @@ export const SearchBar = () => {
       cursor: "pointer",
       fontSize: "14px",
       borderBottom: "1px solid black",
-      background: "red",
       left: "3rem",
     },
     suggestionsContainerOpen: {
@@ -99,18 +99,19 @@ export const SearchBar = () => {
       top: "calc(100% + 4px)",
       left: 0,
       width: "100%",
+      background: "white",
     },
     suggestionHighlighted: {
-      background: "#f9f9f9",
+      background: "#FFEE57",
     },
     input: {
       border: "none",
-      borderBottom: "1px solid #ccc",
       width: "100%",
-      padding: "10px",
       fontSize: "14px",
       outline: "none",
       background: "white",
+      height: "1rem",
+      marginTop: "7px",
     },
   };
 
@@ -131,7 +132,7 @@ export const SearchBar = () => {
   return (
     <form
       onSubmit={handleSearchSubmit}
-      className="searchbar-container absolute right-96 w-80 h-14 flex items-center justify-center gap-2 mt-[-4rem]"
+      className="searchbar-container absolute left-2/3 w-80 h-14 flex items-center justify-center gap-2 mt-[-4rem]"
     >
       <button type="submit" className="h-5 w-5">
         <img src={searchIcon} alt="Search Icon" />
