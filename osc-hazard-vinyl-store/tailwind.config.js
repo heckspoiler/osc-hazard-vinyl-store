@@ -6,6 +6,7 @@ module.exports = {
     "./src/Components/Header/Header.js",
     "./src/Components/Header/SearchBar/SearchBar.js",
     "./src/Components/Header/LoginSection/LoginSection.js",
+    "./src/Components/Header/LoginSection/LoginButton/LoginButton.js",
   ],
   theme: {
     extend: {

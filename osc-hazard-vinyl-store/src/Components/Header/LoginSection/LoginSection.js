@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LoginButton } from "./LoginButton/LoginButton";
 import defaultFace from "../../../icons/default-face.png";
 
 export const LoginSection = () => {
@@ -13,9 +14,7 @@ export const LoginSection = () => {
         />
       </div>
       <div className="ButtonContainer flex gap-1 font-mono">
-        <button className="border border-black p-1 rounded-2xl w-16 text-xs">
-          Log in
-        </button>
+        <LoginButton />
         <button className="border border-black p-1 rounded-2xl w-16 text-xs">
           Sign up
         </button>
