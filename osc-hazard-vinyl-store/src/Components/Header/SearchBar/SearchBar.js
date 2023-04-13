@@ -132,7 +132,7 @@ export const SearchBar = () => {
   return (
     <form
       onSubmit={handleSearchSubmit}
-      className="searchbar-container absolute left-2/3 w-80 h-14 flex items-center justify-center gap-2 mt-[-4rem]"
+      className="searchbar-container absolute right-72 w-64 h-14 flex items-center justify-center gap-2 mt-[-4rem]"
     >
       <button type="submit" className="h-5 w-5">
         <img src={searchIcon} alt="Search Icon" />
