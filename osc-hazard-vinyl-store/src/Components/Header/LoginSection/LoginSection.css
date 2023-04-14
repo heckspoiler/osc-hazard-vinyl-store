@@ -1,0 +1,9 @@
+.imageContainer {
+  background: repeating-radial-gradient(
+    circle,
+    white,
+    white 1px,
+    black 1px,
+    black 3px
+  );
+}
