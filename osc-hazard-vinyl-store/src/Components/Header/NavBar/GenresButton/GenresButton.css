@@ -1,0 +1,38 @@
+.genres-button {
+  position: relative;
+  display: inline-block;
+}
+
+/* .genres-title {
+  Add your button styles here
+} */
+
+.genres-content {
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 0.8rem;
+}
+
+.genres-content :last-child {
+  border-bottom: none;
+}
+.genres-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.genres-button:hover .genres-content {
+  display: block;
+}
+.dropdown-link {
+  border-bottom: 1px solid black;
+}
+
+.dropdown-link:hover {
+  background-color: rgba(255, 238, 87, 1);
+}

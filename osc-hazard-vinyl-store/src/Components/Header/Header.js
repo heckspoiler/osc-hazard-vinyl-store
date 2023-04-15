@@ -2,10 +2,30 @@ import React from "react";
 import { NavBar } from "./NavBar/NavBar";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { LoginSection } from "./LoginSection/LoginSection";
+import "./Header.css";
+import Decor from "../../icons/decor-header-1.svg";
 
 export const Header = (props) => {
   return (
     <header className="bg-white p-4 flex justify-evenly items-center h-40">
+      <div className="header-text-container flex gap-5 text-xxs text-gray-400 font-mono">
+        <p className="flex">
+          <img src={Decor} className="decor-svg" />
+          Worldwide Shipping
+        </p>
+        <p className="flex">
+          <img src={Decor} className="decor-svg" />
+          Discount on First Purchase
+        </p>
+        <p className="flex">
+          <img src={Decor} className="decor-svg" />
+          Curbside Pickup available
+        </p>
+        <p className="flex">
+          <img src={Decor} className="decor-svg" />
+          New Collections Every Week
+        </p>
+      </div>
       <NavBar />
       <SearchBar />
       <LoginSection />
