@@ -2,11 +2,12 @@
   position: relative;
   border: 1px solid black;
   width: 81%;
-  height: 28rem;
+  height: 36rem;
   top: 4rem;
   overflow: hidden;
   margin: 0 auto;
   justify-content: space-evenly;
+  grid-template-columns: 1fr 1.5fr 1fr;
 }
 
 .slider-image,
