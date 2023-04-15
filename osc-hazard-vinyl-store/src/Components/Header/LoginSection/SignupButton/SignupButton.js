@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "./SignupButton.css";
 
 const SignupForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -7,18 +9,18 @@ const SignupForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [profilePicture, setProfilePicture] = useState("");
-  const [age, setAge] = useState("");
+  const [dateOfBirth, setDateOfBirth] = useState(null);
   const handleSubmit = (event) => {
     event.preventDefault();
     // Send users Information to Backend to create new user.
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="login-form">
       <label htmlFor="profile-picture">Upload your Profile Picture:</label>
       <input
         type="file"
-        id="prifile-picture"
+        id="profile-picture"
         accept="image/png, image/jpeg"
         value={profilePicture}
         onChange={(event) => setProfilePicture(event.target.value)}
@@ -67,6 +69,39 @@ const SignupForm = () => {
         onChange={(event) => setPassword(event.target.value)}
         className="border border-black pl-2 text-xs h-6"
       />
+
+      <label htmlFor="dateofbirth">Date of Birth:</label>
+      <DatePicker
+        id="dateOfBirth"
+        selected={dateOfBirth}
+        onChange={(date) => setDateOfBirth(date)}
+        dateFormat="dd/MM/yyyy"
+        showYearDropdown
+        scrollableYearDropdown
+        yearDropdownItemNumber={50}
+        className="border border-black pl-2 text-xs h-6"
+      />
     </form>
+  );
+};
+
+export const SignupButton = () => {
+  const [showSignupForm, setShowSignupForm] = useState(true);
+
+  const handleSignupClick = () => {
+    setShowSignupForm(!showSignupForm);
+    console.log("huso");
+  };
+
+  return (
+    <div>
+      <button
+        onClick={handleSignupClick}
+        className="border border-black p-1 rounded-2xl w-16 text-xs hover:bg-buttonYellow"
+      >
+        Sign Up
+      </button>
+      {showSignupForm && <SignupForm />}
+    </div>
   );
 };

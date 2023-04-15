@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LoginButton } from "./LoginButton/LoginButton";
+import { SignupButton } from "./SignupButton/SignupButton";
 import defaultFace from "../../../icons/default-face.png";
 import "./LoginSection.css";
 
@@ -14,11 +15,9 @@ export const LoginSection = () => {
           alt="Login Placeholder Image"
         />
       </div>
-      <div className="ButtonContainer flex gap-1 font-mono">
+      <div className="ButtonContainer relative flex gap-1 font-mono">
         <LoginButton />
-        <button className="border border-black p-1 rounded-2xl w-16 text-xs">
-          Sign up
-        </button>
+        <SignupButton />
       </div>
     </div>
   );

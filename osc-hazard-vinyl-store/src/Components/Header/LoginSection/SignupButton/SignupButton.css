@@ -1,0 +1,7 @@
+.login-form {
+  position: absolute;
+  border: 1px solid red;
+  top: 0;
+  left: 0;
+  margin-left: 50%;
+}
