@@ -1,5 +1,6 @@
 import "./App.css";
 import { Header } from "./Components/Header/Header";
+import { Body } from "./Components/Body/Body";
 import { AppRoutes } from "./routes";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <AppRoutes />
+      <Body />
     </div>
   );
 }
