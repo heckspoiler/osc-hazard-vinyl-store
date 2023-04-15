@@ -22,6 +22,12 @@ const SignupForm = () => {
     return;
   }
 
+  const handleProfilePictureChange = (event) => {
+    const file = event.target.files[0];
+    setProfilePicture(URL.createObjectURL(file));
+    setImage(URL.createObjectURL(file));
+  };
+
   return (
     <form onSubmit={handleSubmit} className="login-form text-xs">
       <h2 className="title">Enter your Details!</h2>
@@ -45,7 +51,7 @@ const SignupForm = () => {
           id="profile-picture"
           accept="image/png, image/jpeg"
           value={profilePicture}
-          onChange={(event) => setProfilePicture(event.target.value)}
+          onChange={handleProfilePictureChange}
           className="border border-black pl-2 text-xs h-6"
         />
       </div>

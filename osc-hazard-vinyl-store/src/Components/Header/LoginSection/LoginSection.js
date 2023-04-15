@@ -17,7 +17,7 @@ export const LoginSection = () => {
       </div>
       <div className="ButtonContainer relative flex gap-1 font-mono">
         <LoginButton />
-        <SignupButton />
+        <SignupButton setImage={setImage} />
       </div>
     </div>
   );
