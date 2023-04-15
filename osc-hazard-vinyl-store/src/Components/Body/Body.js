@@ -4,5 +4,9 @@ import { ImageSlider } from "./ImageSlider/ImageSlider";
 import "./Body.css";
 
 export const Body = () => {
-  return <section className="body"></section>;
+  return (
+    <section>
+      <ImageSlider />
+    </section>
+  );
 };

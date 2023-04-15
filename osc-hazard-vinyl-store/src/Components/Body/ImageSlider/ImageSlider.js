@@ -8,8 +8,6 @@ export const ImageSlider = () => {
     <section className="image-slider">
       <section className="image-slider__container">
         <Slide />
-        <Slide />
-        <Slide />
       </section>
     </section>
   );
