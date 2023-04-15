@@ -1,0 +1,13 @@
+.genres-arrow {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 5px;
+  rotate: calc(225deg);
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  background-size: 100%;
+  margin-left: 50px;
+  margin-top: -10px;
+}

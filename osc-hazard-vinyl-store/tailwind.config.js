@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   content: [
     "./src/Components/Header/NavBar/NavBar.js",
     "./public/index.html",
@@ -12,7 +13,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        buttonYellow: "#FFEE57",
+        buttonYellow: "rgba(255, 238, 87, 0.6)",
+        buttonYellowHover: "rgba(255, 238, 87, 1)",
       },
     },
   },

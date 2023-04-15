@@ -25,7 +25,6 @@ const SignupForm = () => {
   const handleProfilePictureChange = (event) => {
     const file = event.target.files[0];
     setProfilePicture(URL.createObjectURL(file));
-    setImage(URL.createObjectURL(file));
   };
 
   return (
@@ -33,7 +32,7 @@ const SignupForm = () => {
       <h2 className="title">Enter your Details!</h2>
       <div className="input-container">
         <label htmlFor="username">
-          Username<sup className="text-red-600 text-xs">*</sup>:
+          Username<sup className="text-red-600">*</sup>:
         </label>
         <input
           type="text"
@@ -57,7 +56,7 @@ const SignupForm = () => {
       </div>
       <div className="input-container">
         <label htmlFor="firstName">
-          First Name<sup className="text-red-600 text-xs">*</sup>:
+          First Name<sup className="text-red-600">*</sup>:
         </label>
         <input
           type="text"
@@ -70,7 +69,7 @@ const SignupForm = () => {
       </div>
       <div className="input-container">
         <label htmlFor="lastName">
-          Last Name<sup className="text-red-600 text-xs">*</sup>:
+          Last Name<sup className="text-red-600">*</sup>:
         </label>
         <input
           type="text"
@@ -83,7 +82,7 @@ const SignupForm = () => {
       </div>
       <div className="input-container">
         <label htmlFor="email">
-          Email<sup className="text-red-600 text-xs">*</sup>:
+          Email<sup className="text-red-600">*</sup>:
         </label>
         <input
           type="email"
@@ -96,7 +95,7 @@ const SignupForm = () => {
       </div>
       <div className="input-container">
         <label htmlFor="password">
-          Password<sup className="text-red-600 text-xs">*</sup>:
+          Password<sup className="text-red-600">*</sup>:
         </label>
         <input
           type="password"
@@ -109,7 +108,7 @@ const SignupForm = () => {
       </div>
       <div className="input-container">
         <label htmlFor="passwordConfirmation">
-          Confirm Password<sup className="text-red-600 text-xs">*</sup>:
+          Confirm Password<sup className="text-red-600">*</sup>:
         </label>
         <input
           type="password"
@@ -122,10 +121,10 @@ const SignupForm = () => {
       </div>
       <div className="input-container">
         <label htmlFor="dateofbirth">
-          Date of Birth<sup className="text-red-600 text-xs">*</sup>:
+          Date of Birth<sup className="text-red-600">*</sup>:
         </label>
         <DatePicker
-          id="dateOfBirth"
+          id="dateofbirth"
           selected={dateOfBirth}
           onChange={(date) => setDateOfBirth(date)}
           dateFormat="dd/MM/yyyy"
@@ -139,7 +138,7 @@ const SignupForm = () => {
 
       <button
         type="submit"
-        className="submit-button absolute bg-buttonYellow w-32 left-0 right-0 top-0 ml-auto mr-auto h-8 border border-black rounded-2xl text-xs"
+        className="submit-button absolute bg-violet-300 hover:bg-violet-400 transition duration-200 ease-in-out w-32 left-0 right-0 top-0 ml-auto mr-auto h-8 border border-black rounded-2xl text-xs"
       >
         Sign Up
       </button>
@@ -148,7 +147,7 @@ const SignupForm = () => {
 };
 
 export const SignupButton = () => {
-  const [showSignupForm, setShowSignupForm] = useState(true);
+  const [showSignupForm, setShowSignupForm] = useState(false);
 
   const handleSignupClick = () => {
     setShowSignupForm(!showSignupForm);
@@ -159,7 +158,7 @@ export const SignupButton = () => {
     <div>
       <button
         onClick={handleSignupClick}
-        className="border border-black p-1 rounded-2xl w-16 text-xs hover:bg-buttonYellow"
+        className="border border-black p-1 rounded-2xl w-16 text-xs hover:bg-violet-300 transition duration-200 ease-in-out"
       >
         Sign Up
       </button>
