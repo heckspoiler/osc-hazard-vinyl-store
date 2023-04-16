@@ -32,7 +32,8 @@ export const ImageSlider = () => {
   return (
     <div className="image-slider-wrapper">
       <div className="content-slider">
-        <h1 className="absolute border border-black p-3 font-mono text-2xl text-buttonViolet bg-white ml-32 mt-4 z-10">
+        <div className="background-title"></div>
+        <h1 className="absolute border border-black p-3 font-mono text-2xl text-buttonViolet bg-white ml-32 mt-3 z-10">
           Our Picks
         </h1>
       </div>

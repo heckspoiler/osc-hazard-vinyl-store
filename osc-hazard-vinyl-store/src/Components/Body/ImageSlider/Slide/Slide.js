@@ -1,9 +1,11 @@
 import React from "react";
 import "./Slide.css";
-import Image1 from "./images/cactus.jpg";
+import Image1 from "./images/cactus.jpeg";
 import Cover1 from "./images/cover_1.jpg";
 import Cover2 from "./images/cover_2.jpg";
 import Image2 from "./images/weird-stuff-converted.jpeg";
+import Cover3 from "./images/cover_3.jpg";
+import Image3 from "./images/macintosh.jpg";
 
 export const slideData = [
   {
@@ -22,10 +24,10 @@ export const slideData = [
   },
   {
     artistName: "AudioJedi",
-    releaseName: "",
+    releaseName: "First EP",
     text: '"First EP" by AudioJedi is a genre-defying release that combines immersive sound design with Latin percussion grooves and modern breakbeats. The debut release from the artist\'s solo project, it showcases their impressive production skills and ability to blend different genres and styles. The EP is the first release on the new label Fung Ku and promises to be a platform for innovative and boundary-pushing music. Fans of experimental electronic music and Latin rhythms should definitely check it out.',
-    smallImages: ["img3a.jpg", "img3b.jpg", "img3c.jpg", "img3d.jpg"],
-    largeImage: "largeImg3.jpg",
+    smallImages: [Cover3, Cover3, Cover3, Cover3],
+    largeImage: Image3,
   },
 ];
 
