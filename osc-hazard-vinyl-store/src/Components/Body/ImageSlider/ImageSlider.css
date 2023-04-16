@@ -1,3 +1,33 @@
 .image-slider {
   z-index: -100;
 }
+
+.arrow-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin-top: -25vh;
+  padding: 0 5rem;
+}
+
+.arrow {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow-right {
+  rotate: calc(180deg);
+}
+
+.arrow:hover {
+  opacity: 1;
+}
