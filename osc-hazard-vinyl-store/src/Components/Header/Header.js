@@ -4,10 +4,15 @@ import { SearchBar } from "./SearchBar/SearchBar";
 import { LoginSection } from "./LoginSection/LoginSection";
 import "./Header.css";
 import Decor from "../../icons/decor-header-1.svg";
+import Logo from "../../icons/logo.svg";
 
 export const Header = (props) => {
   return (
     <header className="bg-white p-4 flex justify-evenly items-center h-40">
+      <div className="image-container">
+        <img src={Logo} className="logo" />
+      </div>
+
       <div className="header-text-container flex gap-5 text-xxs text-gray-400 font-mono">
         <p className="flex width-32 gap-2">
           <img src={Decor} className="decor-svg" />
@@ -26,6 +31,7 @@ export const Header = (props) => {
           New Collections Every Week
         </p>
       </div>
+
       <NavBar />
       <SearchBar />
       <LoginSection />

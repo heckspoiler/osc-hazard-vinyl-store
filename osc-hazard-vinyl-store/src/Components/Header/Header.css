@@ -17,3 +17,48 @@
   height: 15px;
   width: 15px;
 }
+
+.image-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1400px;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.logo {
+  height: 8.75rem;
+  width: 8.75rem;
+  scale: 1;
+  animation: rotate 15s linear infinite;
+  transition: all 1s ease-in-out;
+}
+
+.logo:hover {
+  height: 11rem;
+  width: 11rem;
+  animation: jump 1s ease-in-out infinite, rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
