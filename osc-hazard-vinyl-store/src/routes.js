@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
-const Home = () => <h2>Home</h2>;
-const News = () => <h2>News</h2>;
-const WarehouseFinds = () => <h2>WarehouseFinds</h2>;
-const Genres = () => <h2>Genres</h2>;
-const Releases = () => <h2>Releases</h2>;
-const EquipmentAndMore = () => <h2>Equipment & More</h2>;
+const Home = () => <h2></h2>;
+const News = () => <h2></h2>;
+const WarehouseFinds = () => <h2></h2>;
+const Genres = () => <h2></h2>;
+const Releases = () => <h2></h2>;
+const EquipmentAndMore = () => <h2></h2>;
 
 export const AppRoutes = () => {
   return (

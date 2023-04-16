@@ -2,6 +2,8 @@ import React from "react";
 import "./Slide.css";
 import Image1 from "./images/cactus.jpg";
 import Cover1 from "./images/cover_1.jpg";
+import Cover2 from "./images/cover_2.jpg";
+import Image2 from "./images/weird-stuff-converted.jpeg";
 
 export const slideData = [
   {
@@ -12,25 +14,29 @@ export const slideData = [
     largeImage: Image1,
   },
   {
-    artistName: "",
-    releaseName: "",
-    text: "Slide 2 Text",
-    smallImages: ["img2a.jpg", "img2b.jpg", "img2c.jpg", "img2d.jpg"],
-    largeImage: "largeImg2.jpg",
+    artistName: "Enigmatic Dweller",
+    releaseName: "Eclectic Spectrum EP",
+    text: 'Check out Enigmatic Dweller\'s latest EP, "Eclectic Spectrum"! This innovative producer from Ljubljana blends elements of electronica, jazz, hip-hop, and world music to create a unique auditory experience that defies genre boundaries. The five tracks on this EP showcase his versatility and creative genius, with intricate soundscapes and relentless breakbeats that will leave you hungry for more. Available on all major streaming platforms and as a limited-edition vinyl release, "Eclectic Spectrum" is a must-listen for fans of electronic music.',
+    smallImages: [Cover2, Cover2, Cover2, Cover2],
+    largeImage: Image2,
   },
   {
-    artistName: "",
+    artistName: "AudioJedi",
     releaseName: "",
-    text: "Slide 3 Text",
+    text: '"First EP" by AudioJedi is a genre-defying release that combines immersive sound design with Latin percussion grooves and modern breakbeats. The debut release from the artist\'s solo project, it showcases their impressive production skills and ability to blend different genres and styles. The EP is the first release on the new label Fung Ku and promises to be a platform for innovative and boundary-pushing music. Fans of experimental electronic music and Latin rhythms should definitely check it out.',
     smallImages: ["img3a.jpg", "img3b.jpg", "img3c.jpg", "img3d.jpg"],
     largeImage: "largeImg3.jpg",
   },
 ];
 
-export const Slide = ({ slide }) => {
+export const Slide = ({ slide, isHovered, setIsHovered }) => {
   return (
-    <section className="slide grid grid-cols-3">
-      <section className="slider-text h-80">
+    <section
+      className="slide grid grid-cols-3"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <section className="slider-text h-80 bg-white">
         <section className="artist-name font-mono text-xl">
           {slide.artistName}
         </section>
