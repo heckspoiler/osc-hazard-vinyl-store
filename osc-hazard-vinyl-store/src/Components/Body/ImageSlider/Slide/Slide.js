@@ -25,7 +25,7 @@ export const slideData = [
   {
     artistName: "AudioJedi",
     releaseName: "First EP",
-    text: '"First EP" by AudioJedi is a genre-defying release that combines immersive sound design with Latin percussion grooves and modern breakbeats. The debut release from the artist\'s solo project, it showcases their impressive production skills and ability to blend different genres and styles. The EP is the first release on the new label Fung Ku and promises to be a platform for innovative and boundary-pushing music. Fans of experimental electronic music and Latin rhythms should definitely check it out.',
+    text: '"First EP" by AudioJedi is a genre-defying release that combines immersive sound design with Latin percussion grooves and modern breakbeats. The debut release from the artist\'s solo project, it showcases their impressive production skills and ability to blend different genres and styles. The EP is the first release on the new label "Fung Ku" and promises to be a platform for innovative and boundary-pushing music. Fans of experimental electronic music and Latin rhythms should definitely check it out.',
     smallImages: [Cover3, Cover3, Cover3, Cover3],
     largeImage: Image3,
   },
@@ -42,10 +42,10 @@ export const Slide = ({ slide, isHovered, setIsHovered }) => {
         <section className="artist-name font-mono text-xl">
           {slide.artistName}
         </section>
-        <section className="release-name font-mono text-l">
+        <section className="release-name font-mono text-l ml-4">
           {slide.releaseName}
         </section>
-        <section className="text">{slide.text}</section>
+        <section className="text ml-4">{slide.text}</section>
       </section>
       <section className="slider-vinyl-cover grid grid-cols-2 gap-y-0 h-80">
         {slide.smallImages.map((image, index) => (
