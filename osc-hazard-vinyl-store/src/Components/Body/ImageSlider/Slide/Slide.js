@@ -1,5 +1,6 @@
 import React from "react";
 import "./Slide.css";
+import { Link } from "react-router-dom";
 import Image1 from "./images/cactus.jpeg";
 import Cover1 from "./images/cover_1.jpg";
 import Cover2 from "./images/cover_2.jpg";
@@ -11,7 +12,7 @@ export const slideData = [
   {
     artistName: "Velvet Dynamite Exorcism",
     releaseName: "Four Hours Too Long EP",
-    text: "Velvet Dynamite Exorcism's latest opus, \"Four Hours Too Long\", is a triumphant exploration of experimental niche music. Renowned for their abstract structures, the band has transcended boundaries with an immersive auditory experience that challenges the listener's perceptions. Complex arrangements intertwine with dissonant harmonies, creating a meticulously crafted sonic landscape that dares to defy convention. This album solidifies Velvet Dynamite Exorcism's position as avant-garde maestros, fearlessly pushing the envelope of what music can be, and inviting the audience to delve into the depths of their groundbreaking vision.",
+    text: "Velvet Dynamite Exorcism's latest opus, \"Four Hours Too Long\", is a triumphant exploration of experimental niche music. Renowned for their abstract structures, the band has transcended boundaries with an immersive auditory experience that challenges the listener's perceptions. Complex arrangements intertwine with dissonant harmonies, creating a meticulously crafted sonic landscape that dares to defy convention. This album solidifies Velvet Dynamite Exorcism's position as avant-garde maestros, fearlessly pushing the envelope of what music can be.",
     smallImages: [Cover1, Cover1, Cover1, Cover1],
     largeImage: Image1,
   },
@@ -31,6 +32,17 @@ export const slideData = [
   },
 ];
 
+const formatName = (name) => {
+  return name
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^a-z0-9-]/g, "");
+};
+
+const formatLink = (artistName, releaseName) => {
+  return `${formatName(artistName)}_${formatName(releaseName)}`;
+};
+
 export const Slide = ({ slide, isHovered, setIsHovered }) => {
   return (
     <section
@@ -39,6 +51,13 @@ export const Slide = ({ slide, isHovered, setIsHovered }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <section className="slider-text h-80 bg-white">
+        <Link
+          to={`/releases/${encodeURIComponent(
+            formatLink(slide.artistName, slide.releaseName)
+          )}`}
+        >
+          <button className="learn-more-button">Learn More</button>
+        </Link>
         <section className="artist-name font-mono text-xl">
           {slide.artistName}
         </section>

@@ -2,6 +2,7 @@ import React from "react";
 import { NavBar } from "./NavBar/NavBar";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { LoginSection } from "./LoginSection/LoginSection";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import Decor from "../../icons/decor-header-1.svg";
 import Logo from "../../icons/logo.svg";
