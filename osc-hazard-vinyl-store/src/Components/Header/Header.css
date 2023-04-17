@@ -18,7 +18,7 @@
 }
 
 .image-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,13 +44,13 @@
 }
 
 .wavy {
-  position: relative;
-  top: 2.3rem;
+  position: fixed;
+  top: 5.6rem;
   width: 20%;
   height: 50px;
   background: transparent;
   color: transparent;
-  margin-right: 100rem;
+  margin-right: 110rem;
   overflow: hidden;
 }
 

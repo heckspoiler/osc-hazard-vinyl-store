@@ -45,37 +45,42 @@ const formatLink = (artistName, releaseName) => {
 
 export const Slide = ({ slide, isHovered, setIsHovered }) => {
   return (
-    <section
-      className="slide grid grid-cols-3"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <section className="slider-text h-80 bg-white">
-        <Link
-          to={`/releases/${encodeURIComponent(
-            formatLink(slide.artistName, slide.releaseName)
-          )}`}
-        >
-          <button className="learn-more-button">Learn More</button>
-        </Link>
-        <section className="artist-name font-mono text-xl">
-          {slide.artistName}
+    <div>
+      <h1 className="heading-slide absolute border border-black p-3 font-mono text-2xl font-bold z-101 bg-white">
+        Our Picks
+      </h1>
+      <section
+        className="slide grid grid-cols-3"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <section className="slider-text h-80 bg-white">
+          <Link
+            to={`/releases/${encodeURIComponent(
+              formatLink(slide.artistName, slide.releaseName)
+            )}`}
+          >
+            <button className="learn-more-button">Learn More</button>
+          </Link>
+          <section className="artist-name font-mono text-xl">
+            {slide.artistName}
+          </section>
+          <section className="release-name font-mono text-l ml-4">
+            {slide.releaseName}
+          </section>
+          <section className="text ml-4">{slide.text}</section>
         </section>
-        <section className="release-name font-mono text-l ml-4">
-          {slide.releaseName}
+        <section className="slider-vinyl-cover grid grid-cols-2 gap-y-0 h-80">
+          {slide.smallImages.map((image, index) => (
+            <div key={index} className="vinyl-cover">
+              <img className="vinyl-cover-img" src={image} />
+            </div>
+          ))}
         </section>
-        <section className="text ml-4">{slide.text}</section>
+        <section className="slider-image">
+          <img src={slide.largeImage} className="slider-image-img" />
+        </section>
       </section>
-      <section className="slider-vinyl-cover grid grid-cols-2 gap-y-0 h-80">
-        {slide.smallImages.map((image, index) => (
-          <div key={index} className="vinyl-cover">
-            <img className="vinyl-cover-img" src={image} />
-          </div>
-        ))}
-      </section>
-      <section className="slider-image">
-        <img src={slide.largeImage} className="slider-image-img" />
-      </section>
-    </section>
+    </div>
   );
 };

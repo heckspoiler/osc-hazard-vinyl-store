@@ -31,11 +31,7 @@ export const ImageSlider = () => {
 
   return (
     <div className="image-slider-wrapper">
-      <div className="content-slider">
-        <h1 className="absolute border border-black p-3 font-mono text-2xl text-buttonViolet bg-white ml-3 mt-16 z-10">
-          Our Picks
-        </h1>
-      </div>
+      <div className="content-slider"></div>
       <div className="arrow-container">
         <div className="arrow arrow-left" onClick={prevSlide}>
           <img src={Arrow} />

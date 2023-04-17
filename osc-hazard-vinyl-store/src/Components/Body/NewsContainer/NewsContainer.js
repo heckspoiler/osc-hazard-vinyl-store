@@ -3,6 +3,6 @@ import "./NewsContainer.css";
 
 export const NewsContainer = () => {
   return (
-    <section className="news-container h-40 w-40 border border-black bg-red-400"></section>
+    <section className="news-container border border-black bg-red-400 mt-36 ml-auto mr-auto"></section>
   );
 };
