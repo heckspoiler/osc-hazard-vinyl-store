@@ -9,8 +9,9 @@ module.exports = {
     "./src/Components/Header/LoginSection/LoginSection.js",
     "./src/Components/Header/LoginSection/LoginButton/LoginButton.js",
     "./src/Components/Header/LoginSection/SignupButton/SignupButton.js",
-    "./src/Components/Body/ImageSLider/ImageSlider.js",
-    "./src/Components/Body/ImageSLider/Slide/Slide.js",
+    "./src/Components/Body/ImageSlider/ImageSlider.js",
+    "./src/Components/Body/NewsContainer/NewsContainer.js",
+    "./src/Components/Body/NewsContainer/News/News.js",
   ],
   theme: {
     extend: {
