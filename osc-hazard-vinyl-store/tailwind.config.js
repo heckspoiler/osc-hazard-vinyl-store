@@ -39,6 +39,23 @@ module.exports = {
 
         "7xl": "5rem",
       },
+      borderRadius: {
+        none: "0",
+
+        sm: "0.125rem",
+
+        "4xl": "2.5rem",
+
+        DEFAULT: "4px",
+
+        md: "0.375rem",
+
+        lg: "0.5rem",
+
+        full: "9999px",
+
+        large: "12px",
+      },
     },
   },
   plugins: [],

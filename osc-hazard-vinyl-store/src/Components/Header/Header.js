@@ -12,6 +12,7 @@ export const Header = (props) => {
       <div className="image-container">
         <img src={Logo} className="logo" />
       </div>
+      <div className="wavy"></div>
 
       <div className="header-text-container flex gap-5 text-xxs text-gray-400 font-mono">
         <p className="flex width-32 gap-2">

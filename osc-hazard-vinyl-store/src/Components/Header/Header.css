@@ -44,6 +44,40 @@
   color: red;
 }
 
+.wavy {
+  position: relative;
+  top: 2.3rem;
+  width: 20%;
+  height: 50px;
+  background: transparent;
+  color: transparent;
+  margin-right: 100rem;
+  overflow: hidden;
+}
+
+.wavy::before {
+  font-family: "Courier New", Courier, monospace;
+  top: -2rem;
+  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+  position: absolute;
+  font-size: 2em;
+  color: transparent;
+  text-decoration-style: wavy;
+  text-decoration-color: violet;
+  text-decoration-line: underline;
+  z-index: 100;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-1px);
+  }
+  100% {
+    transform: translateX(-53px);
+  }
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);

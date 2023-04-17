@@ -38,7 +38,7 @@ export const NavBar = (props) => {
   ];
 
   return (
-    <ul className="flex justify-between text-black p-4 w-3/5 gap-5 absolute mt-28 mr-32 p-1 border border-black rounded-3xl bg-yellow-100">
+    <ul className="flex justify-between text-black p-4 w-3/5 gap-5 absolute mt-32 mr-32 p-1 border border-black rounded-4xl bg-yellow-100">
       <li className="navbar-button list-item bg-yellow-100 rounded-3xl font-mono tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xs hover:bg-violet-300 border border-transparent hover:border-black ">
         <Link to="/">Home</Link>
       </li>
