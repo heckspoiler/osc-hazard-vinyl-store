@@ -36,6 +36,10 @@
   font-size: 1rem;
 }
 
-sub {
+sup {
   font-size: 10px;
+}
+
+form input {
+  border-radius: 10px;
 }

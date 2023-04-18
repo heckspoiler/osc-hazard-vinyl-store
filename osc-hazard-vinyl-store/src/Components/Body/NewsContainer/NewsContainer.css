@@ -1,5 +1,19 @@
+.news-container-container {
+  z-index: 1000;
+}
 .news-container {
   height: 100rem;
   width: 81%;
   z-index: 1000;
+}
+
+.heading-slide-news {
+  z-index: 1000;
+  margin-left: 0.2rem;
+  margin-top: 5.2rem;
+  border-left: none;
+  width: 9.7rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
+  text-align: center;
 }

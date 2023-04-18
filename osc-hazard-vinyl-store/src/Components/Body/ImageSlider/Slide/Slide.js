@@ -54,7 +54,7 @@ export const Slide = ({ slide, isHovered, setIsHovered }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <section className="slider-text h-80 bg-white">
+        <section className="slider-text h-100 bg-white">
           <Link
             to={`/releases/${encodeURIComponent(
               formatLink(slide.artistName, slide.releaseName)

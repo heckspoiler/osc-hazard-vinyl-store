@@ -45,6 +45,7 @@
   margin-left: 13rem;
   border-radius: 20px;
   transition: all 0.2 ease-in-out;
+  z-index: 10001;
 }
 
 .learn-more-button:hover {
