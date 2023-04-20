@@ -1,4 +1,4 @@
-.shopping-bag:hover {
+.shopping-bag:active {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
   -webkit-animation-duration: 1s;

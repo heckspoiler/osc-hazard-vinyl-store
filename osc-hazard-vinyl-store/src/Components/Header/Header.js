@@ -10,12 +10,29 @@ import Decor from "../../icons/decor-header-1.svg";
 import Logo from "../../icons/logo.svg";
 
 export const Header = (props) => {
+  const logoScroll = () => {
+    const logoContainer = document.querySelector(".image-container");
+    const scrollPosition = window.scrollY;
+    logoContainer.style.marginLeft = `${-1400 - scrollPosition}px`;
+    if (scrollPosition >= 260) {
+      logoContainer.style.marginLeft = "-1660px";
+    }
+    console.log(scrollPosition);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", logoScroll);
+    return () => {
+      window.removeEventListener("scroll", logoScroll);
+    };
+  }, []);
+
   return (
     <header className="bg-white p-4 flex justify-evenly items-center h-40">
       <div className="image-container">
         <img src={Logo} className="logo" />
+        <div className="wavy"></div>
       </div>
-      <div className="wavy"></div>
 
       <div className="header-text-container flex gap-5 text-xxs text-gray-400 font-mono">
         <p className="flex width-32 gap-2">

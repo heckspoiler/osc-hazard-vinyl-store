@@ -54,14 +54,3 @@
   -webkit-text-fill-color: white;
   margin-top: 6.5%;
 }
-
-.cube {
-  height: 2rem;
-  width: 2rem;
-  border: 1px solid black;
-}
-
-.cube:nth-child(2n) {
-  transform: rotate(45deg);
-  background-color: aliceblue;
-}

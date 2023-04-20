@@ -4,7 +4,7 @@ import { News, newReleases } from "./News/News";
 
 export const NewsContainer = () => {
   return (
-    <div class="news-container-container mt-36 border-t border-black">
+    <div class="news-container-container mt-32">
       <h1 className="heading-slide-news relative font-mono text-2xl z-101 bg-white pr-2">
         New Arrivals
       </h1>

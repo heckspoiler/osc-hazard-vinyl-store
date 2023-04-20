@@ -36,20 +36,20 @@ export const newReleases = [
     releaseCover: require("./images/parallel_minds.jpg"),
   },
   {
-    artistName: "FRANCESCA",
-    releaseName: "THE INSIDE OUT LP",
-    labelName: "Pleasure Club",
+    artistName: "Various Artists",
+    releaseName: "Black Belt Academy Vol. 1",
+    labelName: "Ozelot Records",
 
     price: "12.99£",
-    releaseCover: require("./images/francesca-inside_out_lp.jpg"),
+    releaseCover: require("./images/ozelot-black_belt.jpg"),
   },
   {
-    artistName: "FRANCESCA",
-    releaseName: "THE INSIDE OUT LP",
-    labelName: "Pleasure Club",
+    artistName: "Guillermo Lucena",
+    releaseName: "Mi Corazon EP",
+    labelName: "Ozelot Records",
 
-    price: "12.99£",
-    releaseCover: require("./images/francesca-inside_out_lp.jpg"),
+    price: "14.49£",
+    releaseCover: require("./images/ozelot_mi-corazon.jpg"),
   },
 ];
 
