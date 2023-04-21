@@ -1,5 +1,5 @@
-import React, { Link } from "react";
-import NewsOverlay from "./NewsOverlay/NewsOverlay";
+import React, { useState, Link } from "react";
+import { NewsOverlay } from "./NewsOverlay/NewsOverlay";
 import "./News.css";
 import shoppingBag from "./icons/add.svg";
 
@@ -8,7 +8,6 @@ export const newReleases = [
     artistName: "FRANCESCA",
     releaseName: "THE INSIDE OUT LP",
     labelName: "Pleasure Club",
-
     price: "12.99£",
     releaseCover: require("./images/francesca-inside_out_lp.jpg"),
   },
@@ -16,7 +15,6 @@ export const newReleases = [
     artistName: "Various Artists",
     releaseName: "Slam Jams Vol. 2",
     labelName: "Holding Hands",
-
     price: "14.99£",
     releaseCover: require("./images/slam_jams_vol_2.jpg"),
   },
@@ -24,7 +22,6 @@ export const newReleases = [
     artistName: "Hysteric",
     releaseName: "OZ Wave Edits 83-87",
     labelName: "Self Released",
-
     price: "9.99£",
     releaseCover: require("./images/oz_wave_edits.jpg"),
   },
@@ -32,7 +29,6 @@ export const newReleases = [
     artistName: "Various Artists",
     releaseName: "Eight Two Five",
     labelName: "Parallel Minds",
-
     price: "10.99£",
     releaseCover: require("./images/parallel_minds.jpg"),
   },
@@ -40,7 +36,6 @@ export const newReleases = [
     artistName: "Various Artists",
     releaseName: "Black Belt Academy Vol. 1",
     labelName: "Ozelot Records",
-
     price: "12.99£",
     releaseCover: require("./images/ozelot-black_belt.jpg"),
   },
@@ -48,7 +43,6 @@ export const newReleases = [
     artistName: "Guillermo Lucena",
     releaseName: "Mi Corazon EP",
     labelName: "Ozelot Records",
-
     price: "14.49£",
     releaseCover: require("./images/ozelot_mi-corazon.jpg"),
   },
@@ -61,18 +55,27 @@ export const News = ({
   price,
   releaseCover,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="news-item-container border border-black h-10/12 w-10/12 bg-white ">
-      <div className="news-item p-4 pl-8">
-        <div className="news-image-container flex h-52 w-52 border border-black">
-          <img
-            src={releaseCover}
-            alt={`${artistName} - ${releaseName}`}
-            className=""
-          />
-          <div className="buttons-container news-play-buttons"></div>
+      <div
+        className="news-image-and-overlay-container relative"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {isHovered && <NewsOverlay />}
+        <div className="news-item p-4 pl-8">
+          <div className="news-image-container flex h-52 w-52 border border-black">
+            <img
+              src={releaseCover}
+              alt={`${artistName} - ${releaseName}`}
+              className=""
+            />
+            <div className="buttons-container news-play-buttons"></div>
+          </div>
         </div>
-        <div className="news-info-container mt-1 bg-white w-52 p-2">
+        <div className="news-info-container bg-white w-52 p-2 ml-6">
           <div className="news-info flex flex-col">
             <div className="news-artist-name">
               <b>{artistName}</b>
