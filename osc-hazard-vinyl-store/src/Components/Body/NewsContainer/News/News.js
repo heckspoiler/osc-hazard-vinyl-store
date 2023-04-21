@@ -61,7 +61,7 @@ export const News = ({
   releaseCover,
 }) => {
   return (
-    <div className="news-item-container border border-black h-10/12 w-10/12">
+    <div className="news-item-container border border-black h-10/12 w-10/12 bg-white">
       <div className="news-item p-4 pl-8">
         <div className="news-image-container flex h-52 w-52 border border-black">
           <img
