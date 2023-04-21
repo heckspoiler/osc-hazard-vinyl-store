@@ -1,4 +1,5 @@
 import React, { Link } from "react";
+import NewsOverlay from "./NewsOverlay/NewsOverlay";
 import "./News.css";
 import shoppingBag from "./icons/add.svg";
 

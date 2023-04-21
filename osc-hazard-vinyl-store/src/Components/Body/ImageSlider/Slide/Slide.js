@@ -1,6 +1,7 @@
 import React from "react";
 import "./Slide.css";
 import { Link } from "react-router-dom";
+
 import Image1 from "./images/cactus.jpeg";
 import Cover1 from "./images/cover_1.jpg";
 import Cover2 from "./images/cover_2.jpg";
