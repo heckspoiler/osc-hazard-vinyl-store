@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GenresButton } from "./GenresButton/GenresButton";
+import classNames from "classnames";
 import "./NavBar.css";
 
 export const NavBar = (props) => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScrollNavBar = () => {
+    const navBar = document.querySelector(".navbar");
+    const stickyThreshold = 96;
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= stickyThreshold) {
+    } else {
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollNavBar);
+    return () => {
+      window.removeEventListener("scroll", handleScrollNavBar);
+    };
+  }, []);
+
+  // const navbarClass =
   const genresLinks = [
     { label: "Unapolagetic Basslines", path: "/genres/techno-electro-breaks" },
     {
@@ -38,7 +59,7 @@ export const NavBar = (props) => {
   ];
 
   return (
-    <ul className="flex justify-between text-black p-4 w-3/5 gap-5 absolute mt-32 mr-32 p-1 border border-black rounded-4xl bg-yellow-100">
+    <ul className="navbar flex justify-between text-black p-4 w-3/5 gap-5 absolute mt-32 mr-32 p-1 border border-black rounded-4xl bg-yellow-100">
       <li className="navbar-button list-item bg-yellow-100 rounded-3xl font-mono tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xs hover:bg-violet-300 border border-transparent hover:border-black ">
         <Link to="/">Home</Link>
       </li>
