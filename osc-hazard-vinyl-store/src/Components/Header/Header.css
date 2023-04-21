@@ -1,3 +1,7 @@
+.header {
+  z-index: 1000;
+}
+
 .header-text-container {
   display: flex;
   position: absolute;
@@ -24,7 +28,6 @@
   align-items: center;
   margin-left: -1400px;
   margin-top: 40px;
-  z-index: 1;
 }
 
 .logo {

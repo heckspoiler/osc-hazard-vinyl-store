@@ -6,10 +6,9 @@
 }
 
 .news-container-container {
-  z-index: 1000;
+  z-index: -1;
   height: 100%;
   width: 100%;
-
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -17,13 +16,11 @@
   height: 100%;
   padding: 2rem;
   width: 81%;
-  z-index: 1000;
-
+  z-index: -1;
   margin: 3rem auto;
 }
 
 .heading-slide-news {
-  z-index: 1000;
   margin-left: 9.8rem;
   margin-top: 2rem;
   position: absolute;

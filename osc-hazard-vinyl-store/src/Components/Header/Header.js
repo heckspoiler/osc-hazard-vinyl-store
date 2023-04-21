@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavBar } from "./NavBar/NavBar";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { LoginSection } from "./LoginSection/LoginSection";
+import classNames from "classnames";
 import { Link } from "react-router-dom";
 
 import "aos/dist/aos.css";
@@ -10,6 +11,7 @@ import Decor from "../../icons/decor-header-1.svg";
 import Logo from "../../icons/logo.svg";
 
 export const Header = (props) => {
+  const [isSticky, setIsSticky] = useState(false);
   const logoScroll = () => {
     const logoContainer = document.querySelector(".image-container");
     const scrollPosition = window.scrollY;
@@ -27,8 +29,26 @@ export const Header = (props) => {
     };
   }, []);
 
+  const handleScrollNavBar = () => {
+    const stickyThreshold = 96;
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= stickyThreshold) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollNavBar);
+    return () => {
+      window.removeEventListener("scroll", handleScrollNavBar);
+    };
+  }, []);
+
   return (
-    <header className="bg-white p-4 flex justify-evenly items-center h-40">
+    <header className="header bg-white p-4 flex justify-evenly items-center h-40">
       <div className="image-container">
         <img src={Logo} className="logo" />
         <div className="wavy"></div>
@@ -53,7 +73,7 @@ export const Header = (props) => {
         </p>
       </div>
 
-      <NavBar />
+      <NavBar isSticky={isSticky} />
       <SearchBar />
       <LoginSection />
     </header>

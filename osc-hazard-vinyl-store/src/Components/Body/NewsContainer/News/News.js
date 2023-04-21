@@ -61,7 +61,7 @@ export const News = ({
   releaseCover,
 }) => {
   return (
-    <div className="news-item-container border border-black h-10/12 w-10/12 bg-white">
+    <div className="news-item-container border border-black h-10/12 w-10/12 bg-white z-50">
       <div className="news-item p-4 pl-8">
         <div className="news-image-container flex h-52 w-52 border border-black">
           <img
@@ -84,7 +84,7 @@ export const News = ({
         </div>
       </div>
       <div className="bottom-container flex flex-row justify-between items-center text-s px-4 pb-4">
-        <button className="font-mono border border-black bg-buttonViolet h-8 w-16 ml-4 rounded-3xl text-xs hover:bg-buttonYellowHover transition duration-200">
+        <button className="font-mono border border-black bg-buttonViolet h-8 w-16 ml-4 rounded-3xl text-xs hover:bg-buttonYellowHover transition duration-200 z-50">
           More
         </button>
         <div className="news-price ml-20 font-mono text-sm font-semibold">

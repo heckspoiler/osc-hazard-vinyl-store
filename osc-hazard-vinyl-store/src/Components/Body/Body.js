@@ -6,7 +6,7 @@ import "./Body.css";
 
 export const Body = () => {
   return (
-    <section className="flex flex-col">
+    <section className="body flex flex-col z-1">
       <ImageSlider />
       <NewsContainer />
     </section>

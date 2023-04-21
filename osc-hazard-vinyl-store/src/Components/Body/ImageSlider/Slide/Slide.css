@@ -8,7 +8,6 @@
   margin: 0 auto;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1.5fr 1fr;
-  z-index: 100;
 }
 
 .slider-text {
