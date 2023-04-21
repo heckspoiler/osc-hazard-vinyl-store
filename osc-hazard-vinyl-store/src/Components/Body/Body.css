@@ -1,0 +1,14 @@
+.description-hover-container {
+  margin-top: 65rem;
+  gap: 2rem;
+  margin-left: 1.5rem;
+}
+
+.class-image {
+  text-decoration: underline;
+}
+
+.description-hover-container-right {
+  margin-left: 95.5rem;
+  transform: rotateY(180deg);
+}
