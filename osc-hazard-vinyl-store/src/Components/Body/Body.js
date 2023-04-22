@@ -10,6 +10,7 @@ export const Body = () => {
     <section className="body flex flex-col z-1">
       <ImageSlider />
       <NewsContainer />
+      <InStoreEvents />
     </section>
   );
 };

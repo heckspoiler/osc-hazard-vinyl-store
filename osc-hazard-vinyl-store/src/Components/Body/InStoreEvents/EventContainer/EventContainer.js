@@ -31,16 +31,16 @@ export const events = [
 
 export const EventContainer = (props) => {
   const event = props.event;
-  const backgroundImageStyle = {};
+  const backgroundImageStyle = {
+    backgroundImage: `url(${event.backgroundImage})`,
+  };
 
   return (
     <div className="in-store-event-container" style={backgroundImageStyle}>
       <div className="in-store-info-container">
-        <h2 className="in-store-info-header">{props.event.header}</h2>
-        <div className="in-store-info-description">
-          {props.event.description}
-        </div>
-        <button className="in-store-event-button"></button>
+        <h2 className="in-store-info-header">{event.header}</h2>
+        <div className="in-store-info-description">{event.description}</div>
+        <button className="in-store-event-button">MORE</button>
       </div>
     </div>
   );
