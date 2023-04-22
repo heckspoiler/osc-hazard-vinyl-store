@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./InStoreEvents.css";
-import { recordStoreDay } from "./images/record-store-day.png";
-import { eightBitBits } from "./images/8-bit-bits.png";
-import { cruelEnd } from "./images/cruel-end.png";
+import "./EventContainer.css";
+import recordStoreDay from "./images/record-store-day.png";
+import eightBitBits from "./images/8-bit-games.png";
+import cruelEnd from "./images/cruel-end.png";
 
-const events = [
+export const events = [
   {
     id: 1,
     header: "Record Store Day 2023",
@@ -29,12 +29,17 @@ const events = [
   },
 ];
 
-export const EventContainer = () => {
+export const EventContainer = (props) => {
+  const event = props.event;
+  const backgroundImageStyle = {};
+
   return (
-    <div className="in-store-event-container">
+    <div className="in-store-event-container" style={backgroundImageStyle}>
       <div className="in-store-info-container">
-        <h2 className="in-store-info-header"></h2>
-        <div className="in-store-info-description"></div>
+        <h2 className="in-store-info-header">{props.event.header}</h2>
+        <div className="in-store-info-description">
+          {props.event.description}
+        </div>
         <button className="in-store-event-button"></button>
       </div>
     </div>
