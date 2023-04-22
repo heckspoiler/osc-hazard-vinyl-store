@@ -17,7 +17,7 @@ export const NewsContainer = () => {
     setImage(imageArray[Math.floor(Math.random() * imageArray.length)]);
   };
   return (
-    <div>
+    <div className="mt-10">
       <h1 className="heading-slide-news relative font-mono text-2xl bg-white pr-2 z-50">
         New Arrivals
       </h1>
@@ -42,8 +42,8 @@ export const NewsContainer = () => {
         </h2>
       </div>
 
-      <div class="news-container-container mt-32">
-        <section className="news-container border bg-white border-black ml-auto mr-auto grid row-span-3 grid-cols-3 gap-6 justify-items-center content-center gap-x-1 h-auto w-auto z-50">
+      <div class="news-container-container mt-36">
+        <section className="news-container border border-black ml-auto mr-auto grid row-span-3 grid-cols-3 gap-6 justify-items-center content-center gap-x-1 h-auto w-auto z-50">
           {newReleases.map((news, index) => (
             <News
               key={index}

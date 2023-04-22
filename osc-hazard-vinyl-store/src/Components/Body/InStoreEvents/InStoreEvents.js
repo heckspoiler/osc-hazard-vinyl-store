@@ -9,5 +9,14 @@ export const InStoreEvents = () => {
     return <EventContainer key={event.id} event={event} />;
   });
 
-  return <div>{iterateEvents}</div>;
+  return (
+    <div className="mt-10">
+      <h1 className="title_in-store-events absolute font-mono text-2xl text-buttonViolet">
+        Events at the Store
+      </h1>
+      <div className="in-store-events flex p-16 h-auto ml-auto mr-auto">
+        {iterateEvents}
+      </div>
+    </div>
+  );
 };
