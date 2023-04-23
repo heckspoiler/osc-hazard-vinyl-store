@@ -54,7 +54,7 @@ export const Header = (props) => {
         <div className="wavy"></div>
       </div>
 
-      <div className="header-text-container flex gap-5 text-xxs text-gray-400 font-mono">
+      <div className="header-text-container flex gap-5 text-xxs text-gray-400 font-monoSpace">
         <p className="flex width-32 gap-2">
           <img src={Decor} className="decor-svg" />
           Worldwide Shipping

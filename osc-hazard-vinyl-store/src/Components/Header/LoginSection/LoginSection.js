@@ -15,7 +15,7 @@ export const LoginSection = () => {
           alt="Login Placeholder Image"
         />
       </div>
-      <div className="ButtonContainer relative flex gap-1 font-mono">
+      <div className="ButtonContainer relative flex gap-1 font-monoSpace">
         <LoginButton />
         <SignupButton setImage={setImage} />
       </div>

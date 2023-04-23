@@ -15,6 +15,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        monoSpace: ["Space Mono", "monospace"],
+        inter: ["Inter", "sans-serif"],
+      },
       colors: {
         buttonYellow: "rgba(255, 238, 87, 0.6)",
         buttonYellowHover: "rgba(255, 238, 87, 1)",

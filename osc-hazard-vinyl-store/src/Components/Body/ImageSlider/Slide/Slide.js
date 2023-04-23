@@ -47,7 +47,7 @@ const formatLink = (artistName, releaseName) => {
 export const Slide = ({ slide, isHovered, setIsHovered }) => {
   return (
     <div>
-      <h1 className="heading-slide absolute border border-black p-3 font-mono text-2xl font-bold z-101 bg-white">
+      <h1 className="heading-slide absolute font-monoSpace text-2xl bg-transparent pr-2 z-50">
         Our Picks
       </h1>
       <section
@@ -61,15 +61,17 @@ export const Slide = ({ slide, isHovered, setIsHovered }) => {
               formatLink(slide.artistName, slide.releaseName)
             )}`}
           >
-            <button className="learn-more-button">Learn More</button>
+            <button className="learn-more-button font-monoSpace">
+              Learn More
+            </button>
           </Link>
-          <section className="artist-name font-mono text-xl">
+          <section className="artist-name font-monoSpace text-xl">
             {slide.artistName}
           </section>
-          <section className="release-name font-mono text-l ml-4">
+          <section className="release-name font-monoSpace text-l ml-4">
             {slide.releaseName}
           </section>
-          <section className="text ml-4">{slide.text}</section>
+          <section className="text ml-4 font-inter">{slide.text}</section>
         </section>
         <section className="slider-vinyl-cover grid grid-cols-2 gap-y-0 h-80">
           {slide.smallImages.map((image, index) => (

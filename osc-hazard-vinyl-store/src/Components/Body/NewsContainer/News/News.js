@@ -77,21 +77,23 @@ export const News = ({
         </div>
         <div className="news-info-container bg-white w-52 p-2 ml-6">
           <div className="news-info flex flex-col">
-            <div className="news-artist-name">
+            <div className="news-artist-name font-inter">
               <b>{artistName}</b>
             </div>
-            <div className="news-release-name text-xs">{releaseName}</div>
-            <div className="news-label-name text-xs text-gray-400">
+            <div className="news-release-name text-xs font-inter">
+              {releaseName}
+            </div>
+            <div className="news-label-name text-xs text-gray-400 font-inter">
               {labelName}
             </div>
           </div>
         </div>
       </div>
       <div className="bottom-container flex flex-row justify-between items-center text-s px-4 pb-4">
-        <button className="font-mono border border-black bg-buttonViolet h-8 w-16 ml-4 rounded-3xl text-xs hover:bg-buttonYellowHover transition duration-200 z-50">
+        <button className="font-monoSpace border border-black bg-buttonViolet h-8 w-16 ml-4 rounded-3xl text-xs hover:bg-buttonYellowHover transition duration-200 z-50">
           More
         </button>
-        <div className="news-price ml-20 font-mono text-sm font-semibold">
+        <div className="news-price ml-20 font-inter text-sm font-semibold">
           {price}
         </div>
         <button>

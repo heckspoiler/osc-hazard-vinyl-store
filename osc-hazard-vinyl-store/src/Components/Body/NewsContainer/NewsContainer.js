@@ -18,15 +18,15 @@ export const NewsContainer = () => {
   };
   return (
     <div className="mt-10">
-      <h1 className="heading-slide-news relative font-mono text-2xl bg-white pr-2 z-50">
+      <h1 className="heading-slide-news relative font-monoSpace text-2xl bg-transparent pr-2 z-50">
         New Arrivals
       </h1>
-      <div className="description-hover-container description-hover-container-left font-mono absolute flex flex-col">
+      <div className="description-hover-container description-hover-container-left font-monoSpace absolute flex flex-col">
         <h2>
           <i>Hover</i>
         </h2>
         <p
-          className="text-lg font-sans class-image"
+          className="text-lg font-inter class-image"
           onMouseOver={handleHover}
           onMouseLeave={handleHover}
         >
@@ -42,7 +42,7 @@ export const NewsContainer = () => {
         </h2>
       </div>
 
-      <div class="news-container-container mt-36">
+      <div class="news-container-container mt-36 bg-white bg-opacity-50">
         <section className="news-container border border-black ml-auto mr-auto grid row-span-3 grid-cols-3 gap-6 justify-items-center content-center gap-x-1 h-auto w-auto z-50">
           {newReleases.map((news, index) => (
             <News

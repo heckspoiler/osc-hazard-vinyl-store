@@ -80,7 +80,6 @@ export const SearchBar = () => {
       zIndex: 1,
       border: "1px solid black",
       paddingLeft: "10px",
-      fontFamily: "Monospace",
       minHeight: "2rem",
       background: "white",
       overflow: "hidden",
@@ -132,7 +131,7 @@ export const SearchBar = () => {
   return (
     <form
       onSubmit={handleSearchSubmit}
-      className="searchbar-container absolute right-72 w-64 h-14 flex items-center justify-center gap-2 mt-[-4rem]"
+      className="searchbar-container absolute right-72 w-64 h-14 flex font-monoSpace items-center justify-center gap-2 mt-[-4rem]"
     >
       <button type="submit" className="h-5 w-5">
         <img src={searchIcon} alt="Search Icon" />
