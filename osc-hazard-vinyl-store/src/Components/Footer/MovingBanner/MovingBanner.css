@@ -1,31 +1,19 @@
-.moving-banner {
-  overflow: hidden;
-}
-
-.banner-content {
+.content-container {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.content-group {
-  display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  width: 200%;
-  animation: marquee 10s linear infinite;
+  width: 100%;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-}
-
-@keyframes marquee {
+@keyframes scroll {
   0% {
-    transform: translateX(100%);
+    left: 0;
   }
   100% {
-    transform: translateX(-100%);
+    left: -100%;
   }
+}
+
+.animate {
+  animation: scroll 45s linear infinite;
 }

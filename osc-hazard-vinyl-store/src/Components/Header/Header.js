@@ -48,7 +48,7 @@ export const Header = (props) => {
   }, []);
 
   return (
-    <header className="header bg-white p-4 flex justify-evenly items-center h-40">
+    <header className="header p-4 flex justify-evenly items-center h-40">
       <div className="image-container">
         <img src={Logo} className="logo" />
         <div className="wavy"></div>
