@@ -6,7 +6,7 @@ import { AppRoutes } from "./routes";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <div className="blob blob-1">
         <svg
           version="1.1"
