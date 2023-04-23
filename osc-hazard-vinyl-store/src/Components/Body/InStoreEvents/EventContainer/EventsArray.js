@@ -8,7 +8,7 @@ export const EventsArray = [
   {
     id: 1,
     header: "Record Store Day 2023",
-    description: "Join us at our store, sell your vinyl and enjoy yourself",
+    description: "Join us at our store, sell your vinyl and enjoy yourself!",
     backgroundImage: recordStoreDay,
   },
 

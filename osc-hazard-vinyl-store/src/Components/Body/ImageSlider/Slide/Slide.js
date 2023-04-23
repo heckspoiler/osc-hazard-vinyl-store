@@ -65,7 +65,7 @@ export const Slide = ({ slide, isHovered, setIsHovered }) => {
               Learn More
             </button>
           </Link>
-          <section className="artist-name font-monoSpace text-xl">
+          <section className="artist-name font-monoSpace text-xl font-semibold">
             {slide.artistName}
           </section>
           <section className="release-name font-monoSpace text-l ml-4">
