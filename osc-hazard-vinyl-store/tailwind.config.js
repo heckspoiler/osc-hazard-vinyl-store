@@ -24,6 +24,7 @@ module.exports = {
         buttonYellowHover: "rgba(255, 238, 87, 1)",
         buttonViolet: "#DC9FE7",
         violet: "violet",
+        violetLowOpa: "rgba(238, 130, 238, 0.6)",
       },
       fontSize: {
         xxs: ".6rem",

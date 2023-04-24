@@ -19,7 +19,6 @@ export const Header = (props) => {
     if (scrollPosition >= 260) {
       logoContainer.style.marginLeft = "-1660px";
     }
-    console.log(scrollPosition);
   };
 
   useEffect(() => {
