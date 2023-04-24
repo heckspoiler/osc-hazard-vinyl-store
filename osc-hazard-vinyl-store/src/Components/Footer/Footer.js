@@ -12,7 +12,7 @@ export const Footer = () => {
       <MovingBanner />
       <div className="footer-content box-border py-4 flex flex-row mx-8 justify-between gap-10">
         <div className="box-border py-4 flex flex-col gap-4 ml-8">
-          <img src={logo} className="footer-logo h-32 w-32" />
+          <div className="footer-logo h-32 w-32"></div>
           <section className="footer-adress border-box flex flex-col">
             <p className="text-s">Rue de Marvilée 24-1</p>
             <p className="text-s">75003 Paris</p>

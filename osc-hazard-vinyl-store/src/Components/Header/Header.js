@@ -12,16 +12,32 @@ import Logo from "../../icons/logo.svg";
 
 export const Header = (props) => {
   const [isSticky, setIsSticky] = useState(false);
-  const logoScroll = () => {
-    const logoContainer = document.querySelector(".image-container");
-    const scrollPosition = window.scrollY;
-    logoContainer.style.marginLeft = `${-1400 - scrollPosition}px`;
-    if (scrollPosition >= 260) {
-      logoContainer.style.marginLeft = "-1660px";
-    }
-  };
 
   useEffect(() => {
+    const logoScroll = () => {
+      const logoContainer = document.querySelector(".image-container");
+      const scrollPosition = window.scrollY;
+      const viewportWidth = window.innerWidth;
+      const pixelValue = 1400;
+      const vwValue = (pixelValue / viewportWidth) * 100;
+      logoContainer.style.marginLeft = `calc(-${vwValue}vw - ${scrollPosition}px)`;
+      if (scrollPosition >= 860) {
+        const pixelValue = -100;
+        const vwValue = (pixelValue / viewportWidth) * 100;
+        logoContainer.style.marginTop = "52rem";
+        logoContainer.style.marginLeft = `calc(-${vwValue}vw)`;
+      } else if (scrollPosition < 260) {
+        logoContainer.style.marginTop = "2rem";
+      }
+      if (scrollPosition >= 1500) {
+        const pixelValue = -1600;
+        const vwValue = (pixelValue / viewportWidth) * 100;
+        logoContainer.style.marginLeft = `calc(${vwValue}vw + ${
+          scrollPosition - 1880
+        }px)`;
+      }
+      console.log(scrollPosition);
+    };
     window.addEventListener("scroll", logoScroll);
     return () => {
       window.removeEventListener("scroll", logoScroll);
@@ -50,7 +66,7 @@ export const Header = (props) => {
     <header className="header p-4 flex justify-evenly items-center h-40">
       <div className="image-container">
         <img src={Logo} className="logo" />
-        <div className="wavy"></div>
+        {/* <div className="wavy"></div> */}
       </div>
 
       <div className="header-text-container flex gap-5 text-xxs text-gray-400 font-monoSpace">
