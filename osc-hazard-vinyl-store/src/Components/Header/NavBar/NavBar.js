@@ -9,7 +9,7 @@ export const NavBar = ({ isSticky }) => {
   const navbarClass = classNames("navbar", {
     "fixed top-0 bg-transparent flex gap-5 transition-all duration-700 mt-0 z-50 border-b border-black":
       isSticky,
-    "flex justify-between text-black transition-all duration-700 p-4 w-3/5 gap-5 absolute mt-32 mr-32 p-1 border border-black rounded-4xl ":
+    "flex justify-between text-black transition-all duration-700 p-4 w-3/5 gap-5 absolute mt-32 mr-32 p-1 border border-black bg-white":
       !isSticky,
   });
   const genresLinks = [
