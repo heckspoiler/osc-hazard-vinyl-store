@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <footer className="footer box-border mt-10">
       <MovingBanner />
-      <div className="footer-content box-border py-4 flex flex-row mx-8 justify-between">
+      <div className="footer-content box-border py-4 flex flex-row mx-8 justify-between gap-10">
         <div className="box-border py-4 flex flex-col gap-4 ml-8">
           <img src={logo} className="footer-logo h-32 w-32" />
           <section className="footer-adress border-box flex flex-col">
@@ -44,11 +44,11 @@ export const Footer = () => {
             </section>
           </section>
         </div>
-        <section className="h-auto w-auto border-box flex flex-col gap-10 my-auto">
-          <div className="footer-blocks border border-black w-80 h-4 rounded-3xl"></div>
-          <div className="footer-blocks border border-black w-80 h-4 rounded-3xl"></div>
-          <div className="footer-blocks border border-black w-80 h-4 rounded-3xl"></div>
-          <div className="footer-blocks border border-black w-80 h-4 rounded-3xl"></div>
+        <section className="block-container h-auto w-auto border-box flex flex-col gap-10 my-auto">
+          <div className="footer-blocks border border-black h-4 rounded-3xl"></div>
+          <div className="footer-blocks border border-black h-4 rounded-3xl"></div>
+          <div className="footer-blocks border border-black h-4 rounded-3xl"></div>
+          <div className="footer-blocks border border-black h-4 rounded-3xl"></div>
         </section>
         <section className="h-auto w-auto border-box flex flex-col my-auto border border-black p-10 bg-buttonYellow">
           <form className="flex-col flex gap-4">

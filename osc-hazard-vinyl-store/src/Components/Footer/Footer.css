@@ -1,5 +1,9 @@
 .footer-blocks {
-  width: 60rem;
+  width: 100%;
+}
+
+.block-container {
+  width: 80vw;
 }
 
 .input-footer {
