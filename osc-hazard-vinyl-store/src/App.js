@@ -102,7 +102,6 @@ function App() {
 
       <Header />
       <AppRoutes />
-      <Body />
       <Footer />
     </div>
   );
