@@ -24,16 +24,16 @@ export const Header = (props) => {
       if (scrollPosition >= 860) {
         const pixelValue = -100;
         const vwValue = (pixelValue / viewportWidth) * 100;
-        logoContainer.style.marginTop = "52rem";
+        logoContainer.style.marginTop = "48rem";
         logoContainer.style.marginLeft = `calc(-${vwValue}vw)`;
-      } else if (scrollPosition < 260) {
+      } else if (scrollPosition < 860) {
         logoContainer.style.marginTop = "2rem";
       }
       if (scrollPosition >= 1500) {
         const pixelValue = -1600;
         const vwValue = (pixelValue / viewportWidth) * 100;
         logoContainer.style.marginLeft = `calc(${vwValue}vw + ${
-          scrollPosition - 1880
+          scrollPosition - (1820 - vwValue)
         }px)`;
       }
       console.log(scrollPosition);
