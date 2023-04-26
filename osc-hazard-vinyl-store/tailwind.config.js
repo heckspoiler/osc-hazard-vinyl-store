@@ -12,6 +12,8 @@ module.exports = {
     "./src/Components/Body/ImageSlider/ImageSlider.js",
     "./src/Components/Body/NewsContainer/NewsContainer.js",
     "./src/Components/Body/NewsContainer/News/News.js",
+    "./src/Components/Subpages/News/News.js",
+    "./src/Components/Subpages/HeaderSubpages/HeaderSubpages.js",
   ],
   theme: {
     extend: {
