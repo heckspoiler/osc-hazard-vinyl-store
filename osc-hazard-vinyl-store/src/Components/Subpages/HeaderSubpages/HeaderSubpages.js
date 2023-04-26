@@ -7,7 +7,7 @@ export const HeaderSubpages = () => {
   return (
     <section className="fixed header-subpages gap-40 h-auto w-auto flex flex-row z-10">
       <NavBarSubpages />
-      <img src={Logo} className="logo-subpages z-[-10]" />
+      <img src={Logo} className="logo-subpages z-[-10] ml-10 mt-4" />
     </section>
   );
 };
