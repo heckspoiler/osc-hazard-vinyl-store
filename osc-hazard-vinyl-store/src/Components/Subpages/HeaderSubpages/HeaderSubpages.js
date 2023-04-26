@@ -1,14 +1,13 @@
 import React from "react";
 import { NavBarSubpages } from "./NavBarSubpages/NavBarSubpages";
+import "./HeaderSubpages.css";
 import Logo from "../../../icons/logo.svg";
 
 export const HeaderSubpages = () => {
   return (
-    <section className="bg-red-400 h-20 w-auto flex flex-row align-center justify-center">
+    <section className="fixed header-subpages gap-40 h-auto w-auto flex flex-row z-10">
       <NavBarSubpages />
-      <div className="">
-        <img src={Logo} className="logo" />
-      </div>
+      <img src={Logo} className="logo-subpages z-[-10]" />
     </section>
   );
 };

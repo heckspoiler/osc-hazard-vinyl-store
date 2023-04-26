@@ -1,0 +1,11 @@
+.logo-subpages {
+  height: 8.75rem;
+  width: 8.75rem;
+  scale: 1;
+  animation: rotate 15s linear infinite;
+  transition: all 1s ease-in-out;
+}
+
+.navbar-subpages {
+  margin-left: 30%;
+}

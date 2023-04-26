@@ -10,6 +10,7 @@ function App() {
   const isHomePage = window.location.pathname === "/";
   return (
     <div className="App overflow-x-hidden">
+      <BackgroundBlobs />
       <AppRoutes />
       <Footer />
     </div>

@@ -40,7 +40,7 @@ export const NavBarSubpages = ({ isSticky }) => {
   ];
 
   return (
-    <ul className="fixed top-0 bg-transparent flex flex-row gap-5 transition-all duration-700 mt-0 z-50 border-b border-black">
+    <ul className="navbar-subpages fixed top-0 bg-transparent flex flex-row gap-5 transition-all duration-700 mt-0 z-50 border-b border-black ml-auto mr-auto top-4">
       <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xs hover:bg-violet-300 border border-transparent hover:border-black ">
         <Link to="/">Home</Link>
       </li>

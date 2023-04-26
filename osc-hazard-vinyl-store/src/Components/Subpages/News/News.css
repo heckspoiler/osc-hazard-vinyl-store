@@ -1,0 +1,24 @@
+.news-first-section-upper {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(./images/kendrick_thompson.jpg);
+  height: 40rem;
+  width: 100%;
+}
+
+.news-first-section-lower-left {
+  background-image: url(./images/mandy_pixel.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+
+  background-size: 140%;
+}
+.news-first-section-lower-right {
+  background-image: url(./images/timothy_kane.jpg);
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
