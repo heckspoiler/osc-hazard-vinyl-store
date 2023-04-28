@@ -1,0 +1,21 @@
+.news-first-section-upper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/Users/Carlito/Desktop/repos/osc-hazard-vinyl-store/osc-hazard-vinyl-store/src/Components/Subpages/News/images/kendrick_thompson.jpg);
+  height: 40rem;
+  width: 100%;
+}
+
+.news-first-section-lower-left {
+  background-image: url(/Users/Carlito/Desktop/repos/osc-hazard-vinyl-store/osc-hazard-vinyl-store/src/Components/Subpages/News/images/mandy_pixel.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news-first-section-lower-right {
+  background-image: url(/Users/Carlito/Desktop/repos/osc-hazard-vinyl-store/osc-hazard-vinyl-store/src/Components/Subpages/News/images/timothy_kane.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}

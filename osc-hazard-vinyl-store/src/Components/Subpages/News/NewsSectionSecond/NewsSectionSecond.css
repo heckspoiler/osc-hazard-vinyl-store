@@ -1,0 +1,45 @@
+.lower-second-image-container {
+  background-image: url(/Users/Carlito/Desktop/repos/osc-hazard-vinyl-store/osc-hazard-vinyl-store/src/Components/Subpages/News/NewsSectionSecond/images/doris-norton.webp);
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lower-first-image-container {
+  background-image: url(/Users/Carlito/Desktop/repos/osc-hazard-vinyl-store/osc-hazard-vinyl-store/src/Components/Subpages/News/NewsSectionSecond/images/klaus-jakuhn.jpg);
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.news-second-section-main {
+  background-image: url(/Users/Carlito/Desktop/repos/osc-hazard-vinyl-store/osc-hazard-vinyl-store/src/Components/Subpages/News/NewsSectionSecond/images/cs80.jpg);
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+  width: 100%;
+}
+
+/* small screens */
+@media only screen and (max-width: 600px) {
+  /* CSS styles go here */
+}
+
+/* medium screens */
+@media only screen and (max-width: 900px) {
+  /* CSS styles go here */
+}
+
+/* large screens */
+@media only screen and (max-width: 1200px) {
+  /* CSS styles go here */
+}
+
+/* extra-large screens */
+@media only screen and (min-width: 1200px) {
+  /* CSS styles go here */
+}

@@ -8,13 +8,11 @@ import "./Body.css";
 
 export const Body = () => {
   return (
-    <Link to="/body">
-      <section className="body flex flex-col z-1">
-        <Header />
-        <ImageSlider />
-        <NewsContainer />
-        <InStoreEvents />
-      </section>
-    </Link>
+    <section className="body flex flex-col z-1">
+      <Header />
+      <ImageSlider />
+      <NewsContainer />
+      <InStoreEvents />
+    </section>
   );
 };

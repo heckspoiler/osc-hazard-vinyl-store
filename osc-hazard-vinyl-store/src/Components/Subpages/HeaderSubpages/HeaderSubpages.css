@@ -1,11 +1,24 @@
 .logo-subpages {
-  height: 8.75rem;
-  width: 8.75rem;
-  scale: 1;
+  height: 6rem;
+  width: 6rem;
+  margin-left: 10%;
+  margin-top: 10%;
   animation: rotate 15s linear infinite;
   transition: all 1s ease-in-out;
 }
 
 .navbar-subpages {
   margin-left: 30%;
+}
+
+.header-subpages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
