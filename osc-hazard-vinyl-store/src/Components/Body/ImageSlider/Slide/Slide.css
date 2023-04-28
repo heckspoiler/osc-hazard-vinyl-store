@@ -1,11 +1,9 @@
 .slide {
   position: relative;
   border: 1px solid black;
-  width: 81%;
+  width: 86%;
   height: 36rem;
-  top: 4rem;
   overflow: hidden;
-  margin: 0 auto;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1.5fr 1fr;
 }
@@ -18,9 +16,9 @@
 }
 
 .vinyl-cover-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  border: 5px solid white;
 }
 .slider-img {
   height: 100%;
@@ -41,7 +39,7 @@
   border: 1px solid black;
   background-color: rgba(255, 238, 87, 0.6);
   margin-top: 30rem;
-  margin-left: 13rem;
+  margin-left: 10rem;
   border-radius: 20px;
   transition: all 0.2 ease-in-out;
   z-index: 10001;
@@ -52,11 +50,9 @@
 }
 
 .heading-slide {
-  margin-left: 9.8rem;
-  margin-top: 1rem;
   position: absolute;
   color: violet;
   width: auto;
-
-  text-align: center;
+  margin-left: -60rem;
+  margin-top: -39rem;
 }

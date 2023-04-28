@@ -6,20 +6,11 @@
   margin-top: 2rem;
 }
 
-.content-slider {
-  z-index: -100;
-  position: relative;
-
-  width: auto;
-  height: auto;
-  top: 0;
-  left: 0;
-}
-
 .arrow-container {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 95%;
   width: 100%;
   height: auto;
   padding: 0 5rem;
@@ -27,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  margin-bottom: 13rem;
+  margin: auto;
 }
 
 .arrow {

@@ -46,8 +46,8 @@ const formatLink = (artistName, releaseName) => {
 
 export const Slide = ({ slide, isHovered, setIsHovered }) => {
   return (
-    <div>
-      <h1 className="heading-slide absolute font-monoSpace text-2xl bg-transparent pr-2 z-50">
+    <div className=" h-[45rem] flex justify-center items-center">
+      <h1 className="heading-slide absolute font-monoSpace text-xl bg-transparent pr-2 z-50">
         Our Picks
       </h1>
       <section
@@ -55,7 +55,7 @@ export const Slide = ({ slide, isHovered, setIsHovered }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <section className="slider-text h-100 bg-white">
+        <section className="slider-text h-100 bg-white border-r border-black">
           <Link
             to={`/releases/${encodeURIComponent(
               formatLink(slide.artistName, slide.releaseName)
@@ -65,22 +65,24 @@ export const Slide = ({ slide, isHovered, setIsHovered }) => {
               Learn More
             </button>
           </Link>
-          <section className="artist-name font-monoSpace text-xl font-semibold">
+          <section className="artist-name font-monoSpace text-l font-semibold">
             {slide.artistName}
           </section>
-          <section className="release-name font-monoSpace text-l ml-4">
+          <section className="release-name font-monoSpace text-sm ml-4">
             {slide.releaseName}
           </section>
-          <section className="text ml-4 font-inter">{slide.text}</section>
+          <section className="text text-sm ml-4 font-inter">
+            {slide.text}
+          </section>
         </section>
-        <section className="slider-vinyl-cover grid grid-cols-2 gap-y-0 h-80">
+        <section className="slider-vinyl-cover grid grid-cols-2 gap-y-0 py-12 px-2 items-center w-[100%] bg-white h-[100%]">
           {slide.smallImages.map((image, index) => (
             <div key={index} className="vinyl-cover">
               <img className="vinyl-cover-img" src={image} />
             </div>
           ))}
         </section>
-        <section className="slider-image">
+        <section className="slider-image border-l border-black">
           <img src={slide.largeImage} className="slider-image-img" />
         </section>
       </section>
