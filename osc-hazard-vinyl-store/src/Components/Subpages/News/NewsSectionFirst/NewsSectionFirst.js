@@ -19,7 +19,7 @@ export const NewsSectionFirst = () => {
               <h2 className="text-white text-4xl font-monoSpace font-bold absolute mt-[22rem] ml-[3rem] bg-buttonViolet p-4 w-[60rem]">
                 KENDRICK THOMPSON: Impressive Controversy breaks it all
               </h2>
-              <p className="text-white absolute font-medium text-xl mt-[31rem] w-[40rem] ml-[23rem] bg-buttonViolet p-4">
+              <p className="text-white absolute font-medium text-xl mt-[31rem] w-[40rem] font-inter ml-[23rem] bg-buttonViolet p-4">
                 Thompsons music stands for itself, but it is also what makes him
                 a true artist. Why did he manage to stay relevant for over 30
                 Years? Find out about his new releases and more here.
@@ -40,7 +40,7 @@ export const NewsSectionFirst = () => {
                   src={mixOfTheWeek}
                   className="absolute h-36 w-36 mt-24 ml-10 -rotate-[17deg] drop-shadow-[1px_25px_25px_rgba(255,255,255,0.9)]"
                 />
-                <p className="flex flex-row justify-center align-center text-white absolute font-medium text-xl mt-[27.7rem] w-[15rem] ml-[16rem] bg-buttonViolet p-4">
+                <p className="flex flex-row justify-center align-center text-white absolute font-medium text-xl mt-[27.7rem] font-inter w-[15rem] ml-[16rem] bg-buttonViolet p-4">
                   Mix of the{" "}
                   <span className="border border-white bg-white mt-auto mb-auto h-2 w-10 mx-2"></span>
                   <span>Week</span>
@@ -55,7 +55,7 @@ export const NewsSectionFirst = () => {
                 <h2 className="text-white text-4xl font-monoSpace font-bold absolute mt-[22rem] ml-[3rem] bg-buttonViolet p-4 w-[auto]">
                   Friends from the Lot
                 </h2>
-                <p className="flex flex-row justify-center align-center text-white absolute font-medium text-xl mt-[27.7rem] w-[15rem] ml-[16rem] bg-buttonViolet p-4">
+                <p className="flex flex-row justify-center align-center text-white absolute font-medium text-xl font-inter mt-[27.7rem] w-[15rem] ml-[16rem] bg-buttonViolet p-4">
                   The Lot Radio
                   <span className="border border-white bg-white mt-auto mb-auto h-2 w-10 mx-2"></span>
                 </p>
