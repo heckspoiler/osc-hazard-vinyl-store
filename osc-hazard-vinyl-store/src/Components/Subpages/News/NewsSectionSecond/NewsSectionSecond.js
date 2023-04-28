@@ -34,7 +34,7 @@ export const NewsSectionSecond = () => {
               <h1 className="absolute text-xl ml-20 font-monoSpace bg-white w-auto p-4 mt-20 font-bold border border-black">
                 Joining Klaus Jankuhn
               </h1>
-              <p className="mt-44 bg-white p-4 ml-20 text-sm font-inter w-[60%] border border-black">
+              <p className="mt-40 bg-white p-4 ml-20 text-sm font-inter w-[60%] border border-black">
                 Our friends from Groove Magazine sat down with the Pioneer and
                 talked about his journey. Read the full interview here and also
                 get a preview of his upcoming album.
@@ -53,7 +53,7 @@ export const NewsSectionSecond = () => {
               <h1 className="absolute text-xl ml-[15%] font-monoSpace bg-white w-auto p-4 mt-20 font-bold border border-black">
                 Portrait: Doris Norton
               </h1>
-              <p className="mt-44 bg-white p-4 ml-[27%] text-sm font-inter w-[60%] border border-black">
+              <p className="mt-40 bg-white p-4 ml-[27%] text-sm font-inter w-[60%] border border-black">
                 Long before everyone was talking about the "New Normal", Doris
                 Norton was heading full speed to legendary status. Read here
                 about her struggles and what it meant for her to be the first
