@@ -18,7 +18,7 @@ export const GenresButton = ({ title, links }) => {
   };
   return (
     <li
-      className="list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xs hover:bg-violet-300 border border-transparent hover:border-black "
+      className="list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-violet-300 border border-transparent hover:border-black "
       onMouseEnter={handleGenresHover}
       onMouseLeave={handleGenresLeave}
     >

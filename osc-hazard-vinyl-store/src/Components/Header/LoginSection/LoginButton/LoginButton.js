@@ -53,7 +53,7 @@ export const LoginButton = () => {
     <div>
       <button
         onClick={handleLoginClick}
-        className="border border-black p-1 rounded-2xl w-16 text-xs hover:bg-buttonYellow transition duration-200 ease-in-out"
+        className="border border-black p-1 rounded-2xl w-16 text-xxs hover:bg-buttonYellow transition duration-200 ease-in-out"
       >
         Login
       </button>

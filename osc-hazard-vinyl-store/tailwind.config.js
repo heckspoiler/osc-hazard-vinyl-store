@@ -29,6 +29,7 @@ module.exports = {
         violetLowOpa: "rgba(238, 130, 238, 0.6)",
       },
       fontSize: {
+        xxxs: ".4rem",
         xxs: ".6rem",
         xs: ".75rem",
 

@@ -6,8 +6,8 @@ import "../../../CSS/Autosuggest.css";
 export const SearchBar = () => {
   const [search, setSearch] = useState("");
   const products = [
-    { artist: "dinglelele", release: "jueue EP" },
-    { artist: "dingleasdflele", release: "juasdfeue EP" },
+    { artist: "johnnY hed an StiifA", release: "jueue EP" },
+    { artist: "JOhnny Hed An stiifa", release: "juasdfeue EP" },
   ];
 
   const handleSearch = (e) => {
@@ -73,14 +73,15 @@ export const SearchBar = () => {
     container: {
       top: "100%",
       left: 0,
+      fontSize: "12px",
       width: "80%",
-      height: "1rem",
+      height: "0.8rem",
       background: "#fff",
       overflow: "auto",
       zIndex: 1,
       border: "1px solid black",
       paddingLeft: "10px",
-      minHeight: "2rem",
+      minHeight: "1.7rem",
       background: "white",
       overflow: "hidden",
     },
@@ -89,24 +90,23 @@ export const SearchBar = () => {
       display: "block",
       padding: "8px",
       cursor: "pointer",
-      fontSize: "14px",
+      fontSize: "12px",
       borderBottom: "1px solid black",
-      left: "3rem",
     },
     suggestionsContainerOpen: {
       position: "absolute",
-      top: "calc(100% + 4px)",
+      top: "calc(100% + 8px)",
       left: 0,
       width: "100%",
       background: "white",
     },
     suggestionHighlighted: {
-      background: "#FFEE57",
+      background: "violet",
     },
     input: {
       border: "none",
       width: "100%",
-      fontSize: "14px",
+      fontSize: "10px",
       outline: "none",
       background: "white",
       height: "1rem",
@@ -131,7 +131,7 @@ export const SearchBar = () => {
   return (
     <form
       onSubmit={handleSearchSubmit}
-      className="searchbar-container absolute right-72 w-64 h-14 flex font-monoSpace items-center justify-center gap-2 mt-[-4rem]"
+      className="searchbar-container absolute right-60 w-40 h-4 text-xxs flex font-monoSpace items-center justify-center gap-2 mt-[-4rem]"
     >
       <button type="submit" className="h-5 w-5">
         <img src={searchIcon} alt="Search Icon" />

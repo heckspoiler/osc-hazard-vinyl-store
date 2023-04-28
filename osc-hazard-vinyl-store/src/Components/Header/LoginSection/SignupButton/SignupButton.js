@@ -138,7 +138,7 @@ const SignupForm = () => {
 
       <button
         type="submit"
-        className="submit-button absolute bg-violet-300 hover:bg-violet-400 transition duration-200 ease-in-out w-32 left-0 right-0 top-0 ml-auto mr-auto h-8 border border-black rounded-2xl text-xs"
+        className="submit-button absolute transition duration-200 ease-in-out w-24 left-0 right-0 top-0 ml-auto mr-auto h-8 border border-black rounded-2xl text-xxs"
       >
         Sign Up
       </button>
@@ -158,7 +158,7 @@ export const SignupButton = () => {
     <div>
       <button
         onClick={handleSignupClick}
-        className="border border-black p-1 rounded-2xl w-16 text-xs hover:bg-violet-300 transition duration-200 ease-in-out"
+        className="border border-black p-1 rounded-2xl w-16 text-xxs hover:bg-violet-300 transition duration-200 ease-in-out"
       >
         Sign Up
       </button>
