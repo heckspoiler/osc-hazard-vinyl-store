@@ -19,7 +19,7 @@ export const BackgroundBlobs = () => {
               {" "}
               <stop
                 offset="0%"
-                style={{ stopColor: "rgb(252, 238, 112)" }}
+                style={{ stopColor: "rgb(255, 238, 87)" }}
               ></stop>{" "}
               <stop
                 offset="100%"
@@ -61,7 +61,7 @@ export const BackgroundBlobs = () => {
           </path>
         </svg>
       </div>
-      <div className="blob blob-2">
+      <div className="blob blob-2 opacity-80">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

@@ -8,7 +8,8 @@ import mixOfTheWeek from "../icons/mix_of_the_week.svg";
 export const NewsSectionFirst = () => {
   return (
     <div className="h-[100%] box-border mt-32 cursor-default">
-      <section className="news-container box-border bg-buttonYellowHover">
+      <div className="absolute h-[75rem] w-[77%] bg-buttonYellowHover ml-28 "></div>
+      <section className="news-container box-border drop-shadow drop-shadow-lg">
         <section className="news-first-section box-border flex flex-col justify-center h-[auto] gap-1 w-[100%]">
           <Link to="/news/kendrick-thompson_controversy-breaks-it-all">
             <section className="news-first-section-upper brightness-[90%] hover:brightness-100 transition-all transition-200 border border-black">

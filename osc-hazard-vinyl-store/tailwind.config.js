@@ -17,6 +17,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        "3xlYellow": "10px 35px 35px rgba(255, 238, 87, 1)",
+        "3xlViolet": ["10px 35px 35px rgba(238, 130, 238, 1)"],
+      },
       fontFamily: {
         monoSpace: ["Space Mono", "monospace"],
         inter: ["Inter", "sans-serif"],
