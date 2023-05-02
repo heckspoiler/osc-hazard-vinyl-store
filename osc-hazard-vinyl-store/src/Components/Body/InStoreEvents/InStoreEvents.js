@@ -10,8 +10,8 @@ export const InStoreEvents = () => {
   });
 
   return (
-    <div className="mt-10">
-      <h1 className="title_in-store-events absolute font-monoSpace text-2xl text-violet">
+    <div className="">
+      <h1 className="title_in-store-events absolute font-monoSpace text-xl text-violet">
         Events at the Store
       </h1>
       <div className="in-store-events flex p-16 h-auto ml-auto mr-auto">
