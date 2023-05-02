@@ -58,7 +58,7 @@ export const News = ({
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="news-item-container border border-black h-10/12 w-10/12 bg-white ">
+    <div className="news-item-container border border-black h-[100%] w-[90%] bg-white ">
       <div
         className="news-image-and-overlay-container relative"
         onMouseEnter={() => setIsHovered(true)}
@@ -66,7 +66,7 @@ export const News = ({
       >
         {isHovered && <NewsOverlay />}
         <div className="news-item p-4 pl-8">
-          <div className="news-image-container flex h-52 w-52 border border-black">
+          <div className="news-image-container flex h-36 w-36 border border-black">
             <img
               src={releaseCover}
               alt={`${artistName} - ${releaseName}`}
@@ -77,27 +77,27 @@ export const News = ({
         </div>
         <div className="news-info-container bg-white w-52 p-2 ml-6">
           <div className="news-info flex flex-col">
-            <div className="news-artist-name font-inter">
+            <div className="news-artist-name font-inter text-xs">
               <b>{artistName}</b>
             </div>
-            <div className="news-release-name text-xs font-inter">
+            <div className="news-release-name text-xxs font-inter">
               {releaseName}
             </div>
-            <div className="news-label-name text-xs text-gray-400 font-inter">
+            <div className="news-label-name text-xxs text-gray-400 font-inter">
               {labelName}
             </div>
           </div>
         </div>
       </div>
       <div className="bottom-container flex flex-row justify-between items-center text-s px-4 pb-4">
-        <button className="font-monoSpace border border-black bg-buttonViolet h-8 w-16 ml-4 rounded-3xl text-xs hover:bg-buttonYellowHover transition duration-200 z-50">
+        <button className="font-monoSpace border border-black bg-buttonViolet h-6 w-12 ml-4 rounded-3xl text-xxs hover:bg-buttonYellowHover transition duration-200 z-50">
           More
         </button>
-        <div className="news-price ml-20 font-inter text-sm font-semibold">
+        <div className="news-price ml-20 font-inter text-xs font-semibold">
           {price}
         </div>
         <button>
-          <img src={shoppingBag} className="h-10 w-10 shopping-bag" />
+          <img src={shoppingBag} className="h-8 w-8 shopping-bag" />
         </button>
       </div>
     </div>

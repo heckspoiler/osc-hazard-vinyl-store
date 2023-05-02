@@ -21,7 +21,7 @@ export const NewsOverlayButtons = () => {
     <div className="newsoverlay-button-container flex items-center justify-center h-8 w-16 overflow-hidden relative m-auto">
       {!hidePlayButton && (
         <button
-          className="news-overlay-button play-button h-6 w-6 transition-all duration-300 ease-in-out"
+          className="news-overlay-button play-button h-4 w-4 transition-all duration-300 ease-in-out"
           onClick={handlePlayButtonClick}
         >
           <img src={playButton} className="h-full w-full object-cover"></img>
@@ -29,7 +29,7 @@ export const NewsOverlayButtons = () => {
       )}
       {!hidePauseButton && (
         <button
-          className="news-overlay-button pause-button h-6 w-6 transition-all duration-300 ease-in-out"
+          className="news-overlay-button pause-button h-4 w-4 transition-all duration-300 ease-in-out"
           onClick={handlePauseButtonClick}
         >
           <img src={pauseButton} className="h-full w-full object-cover"></img>

@@ -31,14 +31,14 @@ export const ImageSlider = () => {
 
   return (
     <div className="image-slider-wrapper">
-      <div className="arrow-container">
+      {/* <div className="arrow-container">
         <div className="arrow arrow-left" onClick={prevSlide}>
           <img src={Arrow} />
         </div>
         <div className="arrow arrow-right" onClick={nextSlide}>
           <img src={Arrow} />
         </div>
-      </div>
+      </div> */}
       <Slide
         slide={slideData[currentSlide]}
         isHovered={isHovered}

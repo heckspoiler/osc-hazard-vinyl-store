@@ -23,12 +23,13 @@
 
 .image-container {
   align-self: flex-start;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: -1200px;
   margin-top: 20px;
+  z-index: -100;
 }
 
 .logo {
@@ -37,6 +38,7 @@
   scale: 1;
   animation: rotate 15s linear infinite;
   transition: all 1s ease-in-out;
+  z-index: -100;
 }
 
 .logo:hover {

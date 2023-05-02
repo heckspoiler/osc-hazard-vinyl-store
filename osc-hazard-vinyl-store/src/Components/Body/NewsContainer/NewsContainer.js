@@ -17,16 +17,16 @@ export const NewsContainer = () => {
     setImage(imageArray[Math.floor(Math.random() * imageArray.length)]);
   };
   return (
-    <div className="mt-10">
-      <h1 className="heading-slide-news relative font-monoSpace text-2xl bg-transparent pr-2 z-50">
+    <div className="">
+      <h1 className="heading-slide-news relative font-monoSpace text-xl bg-transparent pr-2 z-50">
         New Arrivals
       </h1>
-      <div className="description-hover-container description-hover-container-left font-monoSpace absolute flex flex-col">
+      <div className="description-hover-container description-hover-container-left text-sm font-monoSpace absolute flex flex-col">
         <h2>
-          <i>Hover</i>
+          <i className="text-sm"> Hover</i>
         </h2>
         <p
-          className="text-lg font-inter class-image"
+          className="text-l font-inter class-image"
           onMouseOver={handleHover}
           onMouseLeave={handleHover}
         >
@@ -37,13 +37,13 @@ export const NewsContainer = () => {
           className={`w-20 h-20 absolute ml-16 ${isHidden ? "hidden" : ""}`}
         />
         <p className="text-xs">to</p> <h3 className="text-lg">play</h3>
-        <h2 className="text-2xl">
+        <h2 className="text-lg">
           <b>Previews</b>
         </h2>
       </div>
 
-      <div class="news-container-container mt-36 bg-white bg-opacity-50">
-        <section className="news-container border border-black ml-auto mr-auto grid row-span-3 grid-cols-3 gap-6 justify-items-center content-center gap-x-1 h-auto w-auto z-50">
+      <div class="news-container-container bg-white bg-opacity-50">
+        <section className="news-container border border-black ml-auto mr-auto grid row-span-3 grid-cols-3 gap-6 justify-items-center content-center gap-x-1 z-50">
           {newReleases.map((news, index) => (
             <News
               key={index}

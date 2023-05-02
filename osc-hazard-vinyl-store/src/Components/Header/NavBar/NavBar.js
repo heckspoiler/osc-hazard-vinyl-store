@@ -49,17 +49,17 @@ export const NavBar = ({ isSticky }) => {
     <ul className={navbarClass}>
       <Link to="/">
         {" "}
-        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-violet-300 border border-transparent hover:border-black ">
+        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-white border border-transparent hover:border-black ">
           Home
         </li>
       </Link>
       <Link to="/news">
-        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-violet-300 border border-transparent hover:border-black ">
+        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-white border border-transparent hover:border-black ">
           News
         </li>
       </Link>
       <Link to="/warehouse-finds">
-        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-violet-300 border border-transparent hover:border-black ">
+        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-white border border-transparent hover:border-black ">
           Warehouse Finds
         </li>
       </Link>
@@ -67,12 +67,12 @@ export const NavBar = ({ isSticky }) => {
         <GenresButton title="Genres" links={genresLinks} />
       </Link>
       <Link to="/releases">
-        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-violet-300 border border-transparent hover:border-black ">
+        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-white border border-transparent hover:border-black ">
           Releases
         </li>
       </Link>
       <Link to="/equipment">
-        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-violet-300 border border-transparent hover:border-black ">
+        <li className="navbar-button list-item rounded-3xl font-inter tracking-wider h-auto w-auto p-3 border-bottom-width transition-all duration-200 ease-in-out flex px-4 justify-center align-center text-xxs hover:bg-white border border-transparent hover:border-black ">
           Equipment & More
         </li>
       </Link>

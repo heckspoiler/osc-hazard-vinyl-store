@@ -21,11 +21,10 @@
 
 .heading-slide-news {
   margin-left: 9.8rem;
-  margin-top: 6rem;
+
   position: absolute;
   color: violet;
   width: auto;
-
   text-align: center;
 }
 
@@ -52,16 +51,11 @@
 }
 
 .description-hover-container {
-  margin-top: 25rem;
+  margin-top: 18rem;
   gap: 2rem;
   margin-left: 1.5rem;
 }
 
 .class-image {
   text-decoration: underline;
-}
-
-.description-hover-container-right {
-  margin-left: 95.5rem;
-  transform: rotateY(180deg);
 }
