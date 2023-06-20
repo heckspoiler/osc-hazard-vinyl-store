@@ -9,9 +9,9 @@ import "./News.css";
 export const News = () => {
   return (
     <motion.div
-      initial={{ marginTop: "-1500px", opacity: 0, marginLeft: "-1500px" }}
-      animate={{ marginTop: "0px", opacity: 1, marginLeft: "0px" }}
-      exti={{ marginLeft: "-2500px" }}
+      initial={{ marginTop: "-1500px" }}
+      animate={{ marginTop: "0px" }}
+      exti={{ marginLeft: "2500px" }}
     >
       <Link to="/news">
         <HeaderSubpages />

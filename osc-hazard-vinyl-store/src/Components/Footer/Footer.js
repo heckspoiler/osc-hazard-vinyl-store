@@ -50,7 +50,7 @@ export const Footer = () => {
           <div className="footer-blocks border border-black h-4 rounded-3xl"></div>
           <div className="footer-blocks border border-black h-4 rounded-3xl"></div>
         </section>
-        <section className="h-auto w-auto border-box flex flex-col my-auto border border-black p-10 bg-buttonYellow">
+        <section className="h-auto w-auto border-box flex flex-col my-auto border border-black p-10 bg-buttonYellowHover">
           <form className="flex-col flex gap-4">
             <label className="text-s font-monoSpace">
               SUBSCRIBE TO OUR NEWSLETTER
